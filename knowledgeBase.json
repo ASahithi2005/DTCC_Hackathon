@@ -473,6 +473,137 @@
       "Settlement agreement documents"
     ]
   }
+},
+{
+  "country": "IN",
+  "law": "FCRA/FEMA",
+  "clause": {
+    "id": "IN-FCRA-FEMA-AmnestyIndia",
+    "text": "NGOs must not bypass FCRA registration by routing foreign donations via commercial entities.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "financial",
+        "severity": "high",
+        "details": "ED froze Amnesty's accounts and imposed fines for indirect foreign funding."
+      }
+    ],
+    "evidence_required": [
+      "FCRA registration certificate",
+      "Bank transfer documents",
+      "Foreign remittance declarations",
+      "Company incorporation and transaction trail"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-BlockedFunding-Greenpeace",
+    "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
+    "category": "prohibited",
+    "penalties": [
+      {
+        "type": "license_block",
+        "severity": "medium",
+        "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
+      }
+    ],
+    "evidence_required": [
+      "Government advisory notices",
+      "Activity reports",
+      "FCRA renewal denial orders"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-NonCompliance-NGOBatch",
+    "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "registration_cancelled",
+        "severity": "high",
+        "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
+      }
+    ],
+    "evidence_required": [
+      "FC-3 form filings",
+      "Audit statements",
+      "Utilization reports",
+      "Bank transaction summaries"
+    ]
+  }
+},
+{
+  "country": "US",
+  "law": "Bank Secrecy Act / AML",
+  "clause": {
+    "id": "US-BSA-HSBC-MoneyLaundering",
+    "text": "Financial institutions must maintain robust AML controls to prevent money laundering under the BSA.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "financial_fine",
+        "severity": "very_high",
+        "details": "HSBC paid $1.92 billion for AML failures involving drug cartel money."
+      }
+    ],
+    "evidence_required": [
+      "Suspicious Activity Reports (SARs)",
+      "Transaction logs",
+      "Internal AML audit records",
+      "Correspondence with regulators"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-Cancellation-DristiIAS",
+    "text": "FCRA registration can be cancelled for NGOs violating the Act, engaging in anti-national activities, or misutilizing foreign funds.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "registration_cancelled",
+        "severity": "high",
+        "details": "More than 6,600 NGOs have had FCRA licenses cancelled for non-compliance or misuse of funds."
+      }
+    ],
+    "evidence_required": [
+      "Annual returns",
+      "Foreign contribution utilization records",
+      "Activity reports",
+      "MHA cancellation orders"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-Benami-Anantapur",
+    "text": "NGOs must not use benami operations or unauthorized proxy accounts to receive or utilize foreign funds.",
+    "category": "prohibited",
+    "penalties": [
+      {
+        "type": "criminal_investigation",
+        "severity": "high",
+        "details": "Complaint filed with MHA and ED against four NGOs in Anantapur for operating proxy accounts and misusing FCRA."
+      }
+    ],
+    "evidence_required": [
+      "Bank account ownership documents",
+      "Audit reports",
+      "MHA/ED notices",
+      "Foreign donor transaction logs"
+    ]
+  }
 }
 
 
