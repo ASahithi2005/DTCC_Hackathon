@@ -1,0 +1,87 @@
+[
+  {
+    "country": "IN",
+    "law": "IT Act (Section 43A)",
+    "clause": {
+      "id": "IN-IT-43A-SecurityPractices",
+      "text": "Implement reasonable security practices and procedures aligned with the sensitivity of data handled.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Compensation for negligence resulting in data breach."
+        }
+      ],
+      "evidence_required": ["Security policy documents", "Access control logs", "Encryption protocols"]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Act (Section 43A)",
+    "clause": {
+      "id": "IN-IT-43A-ConsentCollection",
+      "text": "User consent must be obtained before collecting or using personal or sensitive data.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "legal",
+          "severity": "medium",
+          "details": "Violation can result in compensation claims from users."
+        }
+      ],
+      "evidence_required": ["Consent forms", "Privacy Policy acknowledgment logs"]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Act (Section 72A)",
+    "clause": {
+      "id": "IN-IT-72A-DisclosureRestrictions",
+      "text": "Disclosure of personal information without consent is prohibited except under legal obligation.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "criminal",
+          "severity": "high",
+          "details": "Imprisonment up to 3 years or fine up to ₹5,00,000, or both."
+        }
+      ],
+      "evidence_required": ["Disclosure logs", "Legal notice records"]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Rules (Reasonable Security Practices & Procedures), 2011",
+    "clause": {
+      "id": "IN-ITR-2011-ErasureRight",
+      "text": "Users have the right to request deletion of their personal information from the platform.",
+      "category": "user_right",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "low",
+          "details": "Non-compliance may lead to user complaints to data protection authorities."
+        }
+      ],
+      "evidence_required": ["Erasure request logs", "Audit trails of deletion actions"]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Rules (Cookies & Tracking)",
+    "clause": {
+      "id": "IN-ITR-2011-CookiesNotice",
+      "text": "Users must be notified of cookies usage and allowed to opt-out.",
+      "category": "advisory",
+      "penalties": [
+        {
+          "type": "reputational",
+          "severity": "low",
+          "details": "Potential user complaints or loss of trust."
+        }
+      ],
+      "evidence_required": ["Cookie policy notice", "Opt-out logs"]
+    }
+  }
+]
