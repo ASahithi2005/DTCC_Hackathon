@@ -13,7 +13,11 @@
           "details": "Compensation for negligence resulting in data breach."
         }
       ],
-      "evidence_required": ["Security policy documents", "Access control logs", "Encryption protocols"]
+      "evidence_required": [
+        "Security policy documents",
+        "Access control logs",
+        "Encryption protocols"
+      ]
     }
   },
   {
@@ -30,7 +34,10 @@
           "details": "Violation can result in compensation claims from users."
         }
       ],
-      "evidence_required": ["Consent forms", "Privacy Policy acknowledgment logs"]
+      "evidence_required": [
+        "Consent forms",
+        "Privacy Policy acknowledgment logs"
+      ]
     }
   },
   {
@@ -44,10 +51,13 @@
         {
           "type": "criminal",
           "severity": "high",
-          "details": "Imprisonment up to 3 years or fine up to ₹5,00,000, or both."
+          "details": "Imprisonment up to 3 years or fine up to \u20b95,00,000, or both."
         }
       ],
-      "evidence_required": ["Disclosure logs", "Legal notice records"]
+      "evidence_required": [
+        "Disclosure logs",
+        "Legal notice records"
+      ]
     }
   },
   {
@@ -64,7 +74,10 @@
           "details": "Non-compliance may lead to user complaints to data protection authorities."
         }
       ],
-      "evidence_required": ["Erasure request logs", "Audit trails of deletion actions"]
+      "evidence_required": [
+        "Erasure request logs",
+        "Audit trails of deletion actions"
+      ]
     }
   },
   {
@@ -81,7 +94,130 @@
           "details": "Potential user complaints or loss of trust."
         }
       ],
-      "evidence_required": ["Cookie policy notice", "Opt-out logs"]
+      "evidence_required": [
+        "Cookie policy notice",
+        "Opt-out logs"
+      ]
+    }
+  },
+  {
+    "country": "EU",
+    "law": "GDPR Article 6",
+    "clause": {
+      "id": "EU-GDPR-LawfulProcessing",
+      "text": "Personal data must be processed lawfully, fairly and transparently.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Fines up to \u20ac20 million or 4% of global turnover."
+        }
+      ],
+      "evidence_required": [
+        "Privacy policies",
+        "Processing activity logs"
+      ]
+    }
+  },
+  {
+    "country": "EU",
+    "law": "GDPR Article 17",
+    "clause": {
+      "id": "EU-GDPR-ErasureRequest",
+      "text": "Data subjects have the right to request erasure of their personal data.",
+      "category": "user_right",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Complaints to EU data protection authorities."
+        }
+      ],
+      "evidence_required": [
+        "Deletion logs",
+        "User request records"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRS Code 501(c)(3)",
+    "clause": {
+      "id": "US-IRS-501c3-PublicBenefit",
+      "text": "NGO must operate exclusively for religious, charitable, scientific, or educational purposes.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Loss of tax-exempt status and penalties."
+        }
+      ],
+      "evidence_required": [
+        "Mission statement",
+        "Activity reports"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRS Code 501(c)(3)",
+    "clause": {
+      "id": "US-IRS-501c3-PoliticalActivityBan",
+      "text": "NGOs must not participate in political campaigns or lobbying activities.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "legal",
+          "severity": "medium",
+          "details": "Revocation of tax-exempt status."
+        }
+      ],
+      "evidence_required": [
+        "Public communications",
+        "Event participation records"
+      ]
+    }
+  },
+  {
+    "country": "UK",
+    "law": "Charity Commission Regulations",
+    "clause": {
+      "id": "UK-Charity-AuditReports",
+      "text": "Charities must submit annual audit reports to the Commission.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Suspension of registration or fines."
+        }
+      ],
+      "evidence_required": [
+        "Audit reports",
+        "Financial statements"
+      ]
+    }
+  },
+  {
+    "country": "SG",
+    "law": "PDPA",
+    "clause": {
+      "id": "SG-PDPA-ConsentAndNotification",
+      "text": "Organizations must notify individuals and obtain consent before collecting personal data.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Fines up to SGD 1 million."
+        }
+      ],
+      "evidence_required": [
+        "Consent logs",
+        "Privacy notices"
+      ]
     }
   },
   {
