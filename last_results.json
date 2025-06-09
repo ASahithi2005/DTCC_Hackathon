@@ -1,6 +1,5 @@
 {
-  "matched": [],
-  "partial": [
+  "matched": [
     {
       "clause": {
         "id": "IN-IT-43A-SecurityPractices",
@@ -20,8 +19,172 @@
       },
       "country": "IN",
       "law": "IT Act (Section 43A)",
-      "similarity_score": 0.66,
-      "match_score": 0.66,
+      "similarity_score": 0.8,
+      "match_score": 0.8,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-RBI-UNSCR1718-DPRK",
+        "text": "Regulated Entities must verify the UNSCR 1718 Sanctions List on the MEA website daily and take note of any changes, including additions or deletions of designated individuals and entities.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Non-compliance may lead to enforcement action under FEMA and AML regulations."
+          }
+        ],
+        "evidence_required": [
+          "Daily sanctions screening logs",
+          "Compliance officer verification reports",
+          "Archived copies of reviewed sanction list"
+        ]
+      },
+      "country": "IN",
+      "law": "UNSCR 1718 Sanctions Compliance",
+      "similarity_score": 0.77,
+      "match_score": 0.77,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501c4-Notification",
+        "text": "Social welfare organizations must submit Form 8976, Notice of Intent to Operate Under Section 501(c)(4), electronically via Pay.gov within 60 days of formation.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "medium",
+            "details": "Late notification may result in penalties up to $20 per day, not to exceed $5,000."
+          }
+        ],
+        "evidence_required": [
+          "Submission confirmation from Pay.gov",
+          "Copy of filed Form 8976"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 501(c)(4)",
+      "similarity_score": 0.76,
+      "match_score": 0.76,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-ChangeInKeyMembers",
+        "text": "Intimation to the Central Government regarding change in key members of the association under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to intimate changes may lead to penalties."
+          }
+        ],
+        "evidence_required": [
+          "FC-6E form submission",
+          "Supporting documents for changes"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.76,
+      "match_score": 0.76,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-AdditionalBankAccount",
+        "text": "Intimation to the Central Government regarding opening of additional FC-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Non-intimation may lead to scrutiny and penalties."
+          }
+        ],
+        "evidence_required": [
+          "FC-6D form submission",
+          "Bank account opening documents"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.76,
+      "match_score": 0.76,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-ChangeInBankDetails",
+        "text": "Intimation to the Central Government regarding change of designated bank/branch/bank account number of designated FC receipt-cum-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to intimate changes may lead to penalties."
+          }
+        ],
+        "evidence_required": [
+          "FC-6C form submission",
+          "Supporting bank documents"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.78,
+      "match_score": 0.78,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    }
+  ],
+  "partial": [
+    {
+      "clause": {
+        "id": "IN-IT-43A-ConsentCollection",
+        "text": "User consent must be obtained before collecting or using personal or sensitive data.",
+        "penalties": [
+          {
+            "type": "legal",
+            "severity": "medium",
+            "details": "Violation can result in compensation claims from users."
+          }
+        ],
+        "evidence_required": [
+          "Consent forms",
+          "Privacy Policy acknowledgment logs"
+        ]
+      },
+      "country": "IN",
+      "law": "IT Act (Section 43A)",
+      "similarity_score": 0.69,
+      "match_score": 0.69,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-IT-72A-DisclosureRestrictions",
+        "text": "Disclosure of personal information without consent is prohibited except under legal obligation.",
+        "penalties": [
+          {
+            "type": "criminal",
+            "severity": "high",
+            "details": "Imprisonment up to 3 years or fine up to \u20b95,00,000, or both."
+          }
+        ],
+        "evidence_required": [
+          "Disclosure logs",
+          "Legal notice records"
+        ]
+      },
+      "country": "IN",
+      "law": "IT Act (Section 72A)",
+      "similarity_score": 0.63,
+      "match_score": 0.63,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -43,8 +206,54 @@
       },
       "country": "IN",
       "law": "IT Rules (Reasonable Security Practices & Procedures), 2011",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
+      "similarity_score": 0.73,
+      "match_score": 0.73,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-ITR-2011-CookiesNotice",
+        "text": "Users must be notified of cookies usage and allowed to opt-out.",
+        "penalties": [
+          {
+            "type": "reputational",
+            "severity": "low",
+            "details": "Potential user complaints or loss of trust."
+          }
+        ],
+        "evidence_required": [
+          "Cookie policy notice",
+          "Opt-out logs"
+        ]
+      },
+      "country": "IN",
+      "law": "IT Rules (Cookies & Tracking)",
+      "similarity_score": 0.69,
+      "match_score": 0.69,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "EU-GDPR-LawfulProcessing",
+        "text": "Personal data must be processed lawfully, fairly and transparently.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "high",
+            "details": "Fines up to \u20ac20 million or 4% of global turnover."
+          }
+        ],
+        "evidence_required": [
+          "Privacy policies",
+          "Processing activity logs"
+        ]
+      },
+      "country": "EU",
+      "law": "GDPR Article 6",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -66,8 +275,8 @@
       },
       "country": "EU",
       "law": "GDPR Article 17",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -89,8 +298,54 @@
       },
       "country": "US",
       "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501c3-PoliticalActivityBan",
+        "text": "NGOs must not participate in political campaigns or lobbying activities.",
+        "penalties": [
+          {
+            "type": "legal",
+            "severity": "medium",
+            "details": "Revocation of tax-exempt status."
+          }
+        ],
+        "evidence_required": [
+          "Public communications",
+          "Event participation records"
+        ]
+      },
+      "country": "US",
+      "law": "IRS Code 501(c)(3)",
+      "similarity_score": 0.6,
+      "match_score": 0.6,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "UK-Charity-AuditReports",
+        "text": "Charities must submit annual audit reports to the Commission.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Suspension of registration or fines."
+          }
+        ],
+        "evidence_required": [
+          "Audit reports",
+          "Financial statements"
+        ]
+      },
+      "country": "UK",
+      "law": "Charity Commission Regulations",
+      "similarity_score": 0.58,
+      "match_score": 0.58,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -112,30 +367,75 @@
       },
       "country": "SG",
       "law": "PDPA",
-      "similarity_score": 0.56,
-      "match_score": 0.56,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
     {
       "clause": {
-        "id": "IN-RBI-UNSCR1718-DPRK",
-        "text": "Regulated Entities must verify the UNSCR 1718 Sanctions List on the MEA website daily and take note of any changes, including additions or deletions of designated individuals and entities.",
+        "id": "IN-FCRA-11-RegistrationRequirement",
+        "text": "NGOs must obtain FCRA registration or prior permission to accept foreign contributions.",
         "penalties": [
           {
             "type": "regulatory",
             "severity": "high",
-            "details": "Non-compliance may lead to enforcement action under FEMA and AML regulations."
+            "details": "Unauthorized acceptance of foreign contributions can lead to cancellation of registration and legal action."
           }
         ],
         "evidence_required": [
-          "Daily sanctions screening logs",
-          "Compliance officer verification reports",
-          "Archived copies of reviewed sanction list"
+          "FCRA registration certificate",
+          "Prior permission approval documents"
         ]
       },
       "country": "IN",
-      "law": "UNSCR 1718 Sanctions Compliance",
+      "law": "FCRA 2010",
+      "similarity_score": 0.65,
+      "match_score": 0.65,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-16-RenewalRequirement",
+        "text": "Entities must apply for renewal of FCRA registration at least six months before expiry.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to renew on time may result in expiration of registration and inability to receive foreign contributions."
+          }
+        ],
+        "evidence_required": [
+          "Renewal application acknowledgment",
+          "Updated registration certificate"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-17-UtilizationRestriction",
+        "text": "Foreign contributions must be utilized strictly for the purposes for which they were received.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Diversion of funds can lead to cancellation of registration and legal proceedings."
+          }
+        ],
+        "evidence_required": [
+          "Utilization certificates",
+          "Project expenditure reports"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
       "similarity_score": 0.66,
       "match_score": 0.66,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
@@ -159,8 +459,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.57,
-      "match_score": 0.57,
+      "similarity_score": 0.7,
+      "match_score": 0.7,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -182,8 +482,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.61,
-      "match_score": 0.61,
+      "similarity_score": 0.72,
+      "match_score": 0.72,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -206,31 +506,8 @@
       },
       "country": "US",
       "law": "IRC Section 501(c)(3)",
-      "similarity_score": 0.62,
-      "match_score": 0.62,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501c4-Notification",
-        "text": "Social welfare organizations must submit Form 8976, Notice of Intent to Operate Under Section 501(c)(4), electronically via Pay.gov within 60 days of formation.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "medium",
-            "details": "Late notification may result in penalties up to $20 per day, not to exceed $5,000."
-          }
-        ],
-        "evidence_required": [
-          "Submission confirmation from Pay.gov",
-          "Copy of filed Form 8976"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 501(c)(4)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -253,8 +530,8 @@
       },
       "country": "US",
       "law": "IRC Section 501(a)",
-      "similarity_score": 0.62,
-      "match_score": 0.62,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -277,8 +554,8 @@
       },
       "country": "US",
       "law": "IRC Section 508(a)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -301,8 +578,54 @@
       },
       "country": "US",
       "law": "IRC Section 6104(d)",
-      "similarity_score": 0.58,
-      "match_score": 0.58,
+      "similarity_score": 0.73,
+      "match_score": 0.73,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-17-DesignatedBankAccount",
+        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Non-compliance may lead to cancellation of registration and legal action."
+          }
+        ],
+        "evidence_required": [
+          "Bank account opening documents",
+          "Bank statements showing foreign contributions"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-RegistrationValidityExtension",
+        "text": "Validity of FCRA registration certificates extended as per Public Notice dated 28th March 2025.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Operating with an expired registration may lead to penalties."
+          }
+        ],
+        "evidence_required": [
+          "Copy of the public notice",
+          "Updated registration certificate"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.65,
+      "match_score": 0.65,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -324,77 +647,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.58,
-      "match_score": 0.58,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-ChangeInKeyMembers",
-        "text": "Intimation to the Central Government regarding change in key members of the association under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to intimate changes may lead to penalties."
-          }
-        ],
-        "evidence_required": [
-          "FC-6E form submission",
-          "Supporting documents for changes"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.63,
-      "match_score": 0.63,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-AdditionalBankAccount",
-        "text": "Intimation to the Central Government regarding opening of additional FC-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Non-intimation may lead to scrutiny and penalties."
-          }
-        ],
-        "evidence_required": [
-          "FC-6D form submission",
-          "Bank account opening documents"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.59,
-      "match_score": 0.59,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-ChangeInBankDetails",
-        "text": "Intimation to the Central Government regarding change of designated bank/branch/bank account number of designated FC receipt-cum-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to intimate changes may lead to penalties."
-          }
-        ],
-        "evidence_required": [
-          "FC-6C form submission",
-          "Supporting bank documents"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -416,8 +670,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.62,
-      "match_score": 0.62,
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -441,8 +695,107 @@
       },
       "country": "US",
       "law": "Anti-Money Laundering (AML) Regulations",
-      "similarity_score": 0.56,
-      "match_score": 0.56,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-FEMA-AmnestyIndia",
+        "text": "NGOs must not bypass FCRA registration by routing foreign donations via commercial entities.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "high",
+            "details": "ED froze Amnesty's accounts and imposed fines for indirect foreign funding."
+          }
+        ],
+        "evidence_required": [
+          "FCRA registration certificate",
+          "Bank transfer documents",
+          "Foreign remittance declarations",
+          "Company incorporation and transaction trail"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA/FEMA",
+      "similarity_score": 0.63,
+      "match_score": 0.63,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-BlockedFunding-Greenpeace",
+        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
+        "penalties": [
+          {
+            "type": "license_block",
+            "severity": "medium",
+            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
+          }
+        ],
+        "evidence_required": [
+          "Government advisory notices",
+          "Activity reports",
+          "FCRA renewal denial orders"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.7,
+      "match_score": 0.7,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-NonCompliance-NGOBatch",
+        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
+        "penalties": [
+          {
+            "type": "registration_cancelled",
+            "severity": "high",
+            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
+          }
+        ],
+        "evidence_required": [
+          "FC-3 form filings",
+          "Audit statements",
+          "Utilization reports",
+          "Bank transaction summaries"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-BSA-HSBC-MoneyLaundering",
+        "text": "Financial institutions must maintain robust AML controls to prevent money laundering under the BSA.",
+        "penalties": [
+          {
+            "type": "financial_fine",
+            "severity": "very_high",
+            "details": "HSBC paid $1.92 billion for AML failures involving drug cartel money."
+          }
+        ],
+        "evidence_required": [
+          "Suspicious Activity Reports (SARs)",
+          "Transaction logs",
+          "Internal AML audit records",
+          "Correspondence with regulators"
+        ]
+      },
+      "country": "US",
+      "law": "Bank Secrecy Act / AML",
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -466,8 +819,8 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.63,
-      "match_score": 0.63,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -491,366 +844,13 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.59,
-      "match_score": 0.59,
+      "similarity_score": 0.7,
+      "match_score": 0.7,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     }
   ],
-  "unmatched": [
-    {
-      "clause": {
-        "id": "IN-IT-43A-ConsentCollection",
-        "text": "User consent must be obtained before collecting or using personal or sensitive data.",
-        "penalties": [
-          {
-            "type": "legal",
-            "severity": "medium",
-            "details": "Violation can result in compensation claims from users."
-          }
-        ],
-        "evidence_required": [
-          "Consent forms",
-          "Privacy Policy acknowledgment logs"
-        ]
-      },
-      "country": "IN",
-      "law": "IT Act (Section 43A)",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-IT-72A-DisclosureRestrictions",
-        "text": "Disclosure of personal information without consent is prohibited except under legal obligation.",
-        "penalties": [
-          {
-            "type": "criminal",
-            "severity": "high",
-            "details": "Imprisonment up to 3 years or fine up to \u20b95,00,000, or both."
-          }
-        ],
-        "evidence_required": [
-          "Disclosure logs",
-          "Legal notice records"
-        ]
-      },
-      "country": "IN",
-      "law": "IT Act (Section 72A)",
-      "similarity_score": 0.51,
-      "match_score": 0.51,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-ITR-2011-CookiesNotice",
-        "text": "Users must be notified of cookies usage and allowed to opt-out.",
-        "penalties": [
-          {
-            "type": "reputational",
-            "severity": "low",
-            "details": "Potential user complaints or loss of trust."
-          }
-        ],
-        "evidence_required": [
-          "Cookie policy notice",
-          "Opt-out logs"
-        ]
-      },
-      "country": "IN",
-      "law": "IT Rules (Cookies & Tracking)",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "EU-GDPR-LawfulProcessing",
-        "text": "Personal data must be processed lawfully, fairly and transparently.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "high",
-            "details": "Fines up to \u20ac20 million or 4% of global turnover."
-          }
-        ],
-        "evidence_required": [
-          "Privacy policies",
-          "Processing activity logs"
-        ]
-      },
-      "country": "EU",
-      "law": "GDPR Article 6",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501c3-PoliticalActivityBan",
-        "text": "NGOs must not participate in political campaigns or lobbying activities.",
-        "penalties": [
-          {
-            "type": "legal",
-            "severity": "medium",
-            "details": "Revocation of tax-exempt status."
-          }
-        ],
-        "evidence_required": [
-          "Public communications",
-          "Event participation records"
-        ]
-      },
-      "country": "US",
-      "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "UK-Charity-AuditReports",
-        "text": "Charities must submit annual audit reports to the Commission.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Suspension of registration or fines."
-          }
-        ],
-        "evidence_required": [
-          "Audit reports",
-          "Financial statements"
-        ]
-      },
-      "country": "UK",
-      "law": "Charity Commission Regulations",
-      "similarity_score": 0.47,
-      "match_score": 0.47,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-11-RegistrationRequirement",
-        "text": "NGOs must obtain FCRA registration or prior permission to accept foreign contributions.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Unauthorized acceptance of foreign contributions can lead to cancellation of registration and legal action."
-          }
-        ],
-        "evidence_required": [
-          "FCRA registration certificate",
-          "Prior permission approval documents"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-16-RenewalRequirement",
-        "text": "Entities must apply for renewal of FCRA registration at least six months before expiry.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to renew on time may result in expiration of registration and inability to receive foreign contributions."
-          }
-        ],
-        "evidence_required": [
-          "Renewal application acknowledgment",
-          "Updated registration certificate"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.54,
-      "match_score": 0.54,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-17-UtilizationRestriction",
-        "text": "Foreign contributions must be utilized strictly for the purposes for which they were received.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Diversion of funds can lead to cancellation of registration and legal proceedings."
-          }
-        ],
-        "evidence_required": [
-          "Utilization certificates",
-          "Project expenditure reports"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-17-DesignatedBankAccount",
-        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Non-compliance may lead to cancellation of registration and legal action."
-          }
-        ],
-        "evidence_required": [
-          "Bank account opening documents",
-          "Bank statements showing foreign contributions"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.54,
-      "match_score": 0.54,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-RegistrationValidityExtension",
-        "text": "Validity of FCRA registration certificates extended as per Public Notice dated 28th March 2025.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Operating with an expired registration may lead to penalties."
-          }
-        ],
-        "evidence_required": [
-          "Copy of the public notice",
-          "Updated registration certificate"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.54,
-      "match_score": 0.54,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-FEMA-AmnestyIndia",
-        "text": "NGOs must not bypass FCRA registration by routing foreign donations via commercial entities.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "high",
-            "details": "ED froze Amnesty's accounts and imposed fines for indirect foreign funding."
-          }
-        ],
-        "evidence_required": [
-          "FCRA registration certificate",
-          "Bank transfer documents",
-          "Foreign remittance declarations",
-          "Company incorporation and transaction trail"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA/FEMA",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-BlockedFunding-Greenpeace",
-        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
-        "penalties": [
-          {
-            "type": "license_block",
-            "severity": "medium",
-            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
-          }
-        ],
-        "evidence_required": [
-          "Government advisory notices",
-          "Activity reports",
-          "FCRA renewal denial orders"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-NonCompliance-NGOBatch",
-        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
-        "penalties": [
-          {
-            "type": "registration_cancelled",
-            "severity": "high",
-            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
-          }
-        ],
-        "evidence_required": [
-          "FC-3 form filings",
-          "Audit statements",
-          "Utilization reports",
-          "Bank transaction summaries"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "US-BSA-HSBC-MoneyLaundering",
-        "text": "Financial institutions must maintain robust AML controls to prevent money laundering under the BSA.",
-        "penalties": [
-          {
-            "type": "financial_fine",
-            "severity": "very_high",
-            "details": "HSBC paid $1.92 billion for AML failures involving drug cartel money."
-          }
-        ],
-        "evidence_required": [
-          "Suspicious Activity Reports (SARs)",
-          "Transaction logs",
-          "Internal AML audit records",
-          "Correspondence with regulators"
-        ]
-      },
-      "country": "US",
-      "law": "Bank Secrecy Act / AML",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    }
-  ],
+  "unmatched": [],
   "all": [
     {
       "clause": {
@@ -871,8 +871,170 @@
       },
       "country": "IN",
       "law": "IT Act (Section 43A)",
-      "similarity_score": 0.66,
-      "match_score": 0.66,
+      "similarity_score": 0.8,
+      "match_score": 0.8,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-RBI-UNSCR1718-DPRK",
+        "text": "Regulated Entities must verify the UNSCR 1718 Sanctions List on the MEA website daily and take note of any changes, including additions or deletions of designated individuals and entities.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Non-compliance may lead to enforcement action under FEMA and AML regulations."
+          }
+        ],
+        "evidence_required": [
+          "Daily sanctions screening logs",
+          "Compliance officer verification reports",
+          "Archived copies of reviewed sanction list"
+        ]
+      },
+      "country": "IN",
+      "law": "UNSCR 1718 Sanctions Compliance",
+      "similarity_score": 0.77,
+      "match_score": 0.77,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501c4-Notification",
+        "text": "Social welfare organizations must submit Form 8976, Notice of Intent to Operate Under Section 501(c)(4), electronically via Pay.gov within 60 days of formation.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "medium",
+            "details": "Late notification may result in penalties up to $20 per day, not to exceed $5,000."
+          }
+        ],
+        "evidence_required": [
+          "Submission confirmation from Pay.gov",
+          "Copy of filed Form 8976"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 501(c)(4)",
+      "similarity_score": 0.76,
+      "match_score": 0.76,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-ChangeInKeyMembers",
+        "text": "Intimation to the Central Government regarding change in key members of the association under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to intimate changes may lead to penalties."
+          }
+        ],
+        "evidence_required": [
+          "FC-6E form submission",
+          "Supporting documents for changes"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.76,
+      "match_score": 0.76,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-AdditionalBankAccount",
+        "text": "Intimation to the Central Government regarding opening of additional FC-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Non-intimation may lead to scrutiny and penalties."
+          }
+        ],
+        "evidence_required": [
+          "FC-6D form submission",
+          "Bank account opening documents"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.76,
+      "match_score": 0.76,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-ChangeInBankDetails",
+        "text": "Intimation to the Central Government regarding change of designated bank/branch/bank account number of designated FC receipt-cum-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to intimate changes may lead to penalties."
+          }
+        ],
+        "evidence_required": [
+          "FC-6C form submission",
+          "Supporting bank documents"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.78,
+      "match_score": 0.78,
+      "explanation": "Clause fully covered in internal policy.",
+      "status": "matched"
+    },
+    {
+      "clause": {
+        "id": "IN-IT-43A-ConsentCollection",
+        "text": "User consent must be obtained before collecting or using personal or sensitive data.",
+        "penalties": [
+          {
+            "type": "legal",
+            "severity": "medium",
+            "details": "Violation can result in compensation claims from users."
+          }
+        ],
+        "evidence_required": [
+          "Consent forms",
+          "Privacy Policy acknowledgment logs"
+        ]
+      },
+      "country": "IN",
+      "law": "IT Act (Section 43A)",
+      "similarity_score": 0.69,
+      "match_score": 0.69,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-IT-72A-DisclosureRestrictions",
+        "text": "Disclosure of personal information without consent is prohibited except under legal obligation.",
+        "penalties": [
+          {
+            "type": "criminal",
+            "severity": "high",
+            "details": "Imprisonment up to 3 years or fine up to \u20b95,00,000, or both."
+          }
+        ],
+        "evidence_required": [
+          "Disclosure logs",
+          "Legal notice records"
+        ]
+      },
+      "country": "IN",
+      "law": "IT Act (Section 72A)",
+      "similarity_score": 0.63,
+      "match_score": 0.63,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -894,8 +1056,54 @@
       },
       "country": "IN",
       "law": "IT Rules (Reasonable Security Practices & Procedures), 2011",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
+      "similarity_score": 0.73,
+      "match_score": 0.73,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-ITR-2011-CookiesNotice",
+        "text": "Users must be notified of cookies usage and allowed to opt-out.",
+        "penalties": [
+          {
+            "type": "reputational",
+            "severity": "low",
+            "details": "Potential user complaints or loss of trust."
+          }
+        ],
+        "evidence_required": [
+          "Cookie policy notice",
+          "Opt-out logs"
+        ]
+      },
+      "country": "IN",
+      "law": "IT Rules (Cookies & Tracking)",
+      "similarity_score": 0.69,
+      "match_score": 0.69,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "EU-GDPR-LawfulProcessing",
+        "text": "Personal data must be processed lawfully, fairly and transparently.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "high",
+            "details": "Fines up to \u20ac20 million or 4% of global turnover."
+          }
+        ],
+        "evidence_required": [
+          "Privacy policies",
+          "Processing activity logs"
+        ]
+      },
+      "country": "EU",
+      "law": "GDPR Article 6",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -917,8 +1125,8 @@
       },
       "country": "EU",
       "law": "GDPR Article 17",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -940,8 +1148,54 @@
       },
       "country": "US",
       "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501c3-PoliticalActivityBan",
+        "text": "NGOs must not participate in political campaigns or lobbying activities.",
+        "penalties": [
+          {
+            "type": "legal",
+            "severity": "medium",
+            "details": "Revocation of tax-exempt status."
+          }
+        ],
+        "evidence_required": [
+          "Public communications",
+          "Event participation records"
+        ]
+      },
+      "country": "US",
+      "law": "IRS Code 501(c)(3)",
+      "similarity_score": 0.6,
+      "match_score": 0.6,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "UK-Charity-AuditReports",
+        "text": "Charities must submit annual audit reports to the Commission.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Suspension of registration or fines."
+          }
+        ],
+        "evidence_required": [
+          "Audit reports",
+          "Financial statements"
+        ]
+      },
+      "country": "UK",
+      "law": "Charity Commission Regulations",
+      "similarity_score": 0.58,
+      "match_score": 0.58,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -963,30 +1217,75 @@
       },
       "country": "SG",
       "law": "PDPA",
-      "similarity_score": 0.56,
-      "match_score": 0.56,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
     {
       "clause": {
-        "id": "IN-RBI-UNSCR1718-DPRK",
-        "text": "Regulated Entities must verify the UNSCR 1718 Sanctions List on the MEA website daily and take note of any changes, including additions or deletions of designated individuals and entities.",
+        "id": "IN-FCRA-11-RegistrationRequirement",
+        "text": "NGOs must obtain FCRA registration or prior permission to accept foreign contributions.",
         "penalties": [
           {
             "type": "regulatory",
             "severity": "high",
-            "details": "Non-compliance may lead to enforcement action under FEMA and AML regulations."
+            "details": "Unauthorized acceptance of foreign contributions can lead to cancellation of registration and legal action."
           }
         ],
         "evidence_required": [
-          "Daily sanctions screening logs",
-          "Compliance officer verification reports",
-          "Archived copies of reviewed sanction list"
+          "FCRA registration certificate",
+          "Prior permission approval documents"
         ]
       },
       "country": "IN",
-      "law": "UNSCR 1718 Sanctions Compliance",
+      "law": "FCRA 2010",
+      "similarity_score": 0.65,
+      "match_score": 0.65,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-16-RenewalRequirement",
+        "text": "Entities must apply for renewal of FCRA registration at least six months before expiry.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to renew on time may result in expiration of registration and inability to receive foreign contributions."
+          }
+        ],
+        "evidence_required": [
+          "Renewal application acknowledgment",
+          "Updated registration certificate"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-17-UtilizationRestriction",
+        "text": "Foreign contributions must be utilized strictly for the purposes for which they were received.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Diversion of funds can lead to cancellation of registration and legal proceedings."
+          }
+        ],
+        "evidence_required": [
+          "Utilization certificates",
+          "Project expenditure reports"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
       "similarity_score": 0.66,
       "match_score": 0.66,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
@@ -1010,8 +1309,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.57,
-      "match_score": 0.57,
+      "similarity_score": 0.7,
+      "match_score": 0.7,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1033,8 +1332,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.61,
-      "match_score": 0.61,
+      "similarity_score": 0.72,
+      "match_score": 0.72,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1057,31 +1356,8 @@
       },
       "country": "US",
       "law": "IRC Section 501(c)(3)",
-      "similarity_score": 0.62,
-      "match_score": 0.62,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501c4-Notification",
-        "text": "Social welfare organizations must submit Form 8976, Notice of Intent to Operate Under Section 501(c)(4), electronically via Pay.gov within 60 days of formation.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "medium",
-            "details": "Late notification may result in penalties up to $20 per day, not to exceed $5,000."
-          }
-        ],
-        "evidence_required": [
-          "Submission confirmation from Pay.gov",
-          "Copy of filed Form 8976"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 501(c)(4)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1104,8 +1380,8 @@
       },
       "country": "US",
       "law": "IRC Section 501(a)",
-      "similarity_score": 0.62,
-      "match_score": 0.62,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1128,8 +1404,8 @@
       },
       "country": "US",
       "law": "IRC Section 508(a)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1152,8 +1428,54 @@
       },
       "country": "US",
       "law": "IRC Section 6104(d)",
-      "similarity_score": 0.58,
-      "match_score": 0.58,
+      "similarity_score": 0.73,
+      "match_score": 0.73,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-17-DesignatedBankAccount",
+        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Non-compliance may lead to cancellation of registration and legal action."
+          }
+        ],
+        "evidence_required": [
+          "Bank account opening documents",
+          "Bank statements showing foreign contributions"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-RegistrationValidityExtension",
+        "text": "Validity of FCRA registration certificates extended as per Public Notice dated 28th March 2025.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Operating with an expired registration may lead to penalties."
+          }
+        ],
+        "evidence_required": [
+          "Copy of the public notice",
+          "Updated registration certificate"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.65,
+      "match_score": 0.65,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1175,77 +1497,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.58,
-      "match_score": 0.58,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-ChangeInKeyMembers",
-        "text": "Intimation to the Central Government regarding change in key members of the association under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to intimate changes may lead to penalties."
-          }
-        ],
-        "evidence_required": [
-          "FC-6E form submission",
-          "Supporting documents for changes"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.63,
-      "match_score": 0.63,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-AdditionalBankAccount",
-        "text": "Intimation to the Central Government regarding opening of additional FC-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Non-intimation may lead to scrutiny and penalties."
-          }
-        ],
-        "evidence_required": [
-          "FC-6D form submission",
-          "Bank account opening documents"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.59,
-      "match_score": 0.59,
-      "explanation": "Clause partially covered. Check for missing legal nuances.",
-      "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-ChangeInBankDetails",
-        "text": "Intimation to the Central Government regarding change of designated bank/branch/bank account number of designated FC receipt-cum-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to intimate changes may lead to penalties."
-          }
-        ],
-        "evidence_required": [
-          "FC-6C form submission",
-          "Supporting bank documents"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1267,8 +1520,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.62,
-      "match_score": 0.62,
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1292,8 +1545,107 @@
       },
       "country": "US",
       "law": "Anti-Money Laundering (AML) Regulations",
-      "similarity_score": 0.56,
-      "match_score": 0.56,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-FEMA-AmnestyIndia",
+        "text": "NGOs must not bypass FCRA registration by routing foreign donations via commercial entities.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "high",
+            "details": "ED froze Amnesty's accounts and imposed fines for indirect foreign funding."
+          }
+        ],
+        "evidence_required": [
+          "FCRA registration certificate",
+          "Bank transfer documents",
+          "Foreign remittance declarations",
+          "Company incorporation and transaction trail"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA/FEMA",
+      "similarity_score": 0.63,
+      "match_score": 0.63,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-BlockedFunding-Greenpeace",
+        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
+        "penalties": [
+          {
+            "type": "license_block",
+            "severity": "medium",
+            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
+          }
+        ],
+        "evidence_required": [
+          "Government advisory notices",
+          "Activity reports",
+          "FCRA renewal denial orders"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.7,
+      "match_score": 0.7,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-NonCompliance-NGOBatch",
+        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
+        "penalties": [
+          {
+            "type": "registration_cancelled",
+            "severity": "high",
+            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
+          }
+        ],
+        "evidence_required": [
+          "FC-3 form filings",
+          "Audit statements",
+          "Utilization reports",
+          "Bank transaction summaries"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-BSA-HSBC-MoneyLaundering",
+        "text": "Financial institutions must maintain robust AML controls to prevent money laundering under the BSA.",
+        "penalties": [
+          {
+            "type": "financial_fine",
+            "severity": "very_high",
+            "details": "HSBC paid $1.92 billion for AML failures involving drug cartel money."
+          }
+        ],
+        "evidence_required": [
+          "Suspicious Activity Reports (SARs)",
+          "Transaction logs",
+          "Internal AML audit records",
+          "Correspondence with regulators"
+        ]
+      },
+      "country": "US",
+      "law": "Bank Secrecy Act / AML",
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1317,8 +1669,8 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.63,
-      "match_score": 0.63,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1342,362 +1694,10 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.59,
-      "match_score": 0.59,
+      "similarity_score": 0.7,
+      "match_score": 0.7,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
-    },
-    {
-      "clause": {
-        "id": "IN-IT-43A-ConsentCollection",
-        "text": "User consent must be obtained before collecting or using personal or sensitive data.",
-        "penalties": [
-          {
-            "type": "legal",
-            "severity": "medium",
-            "details": "Violation can result in compensation claims from users."
-          }
-        ],
-        "evidence_required": [
-          "Consent forms",
-          "Privacy Policy acknowledgment logs"
-        ]
-      },
-      "country": "IN",
-      "law": "IT Act (Section 43A)",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-IT-72A-DisclosureRestrictions",
-        "text": "Disclosure of personal information without consent is prohibited except under legal obligation.",
-        "penalties": [
-          {
-            "type": "criminal",
-            "severity": "high",
-            "details": "Imprisonment up to 3 years or fine up to \u20b95,00,000, or both."
-          }
-        ],
-        "evidence_required": [
-          "Disclosure logs",
-          "Legal notice records"
-        ]
-      },
-      "country": "IN",
-      "law": "IT Act (Section 72A)",
-      "similarity_score": 0.51,
-      "match_score": 0.51,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-ITR-2011-CookiesNotice",
-        "text": "Users must be notified of cookies usage and allowed to opt-out.",
-        "penalties": [
-          {
-            "type": "reputational",
-            "severity": "low",
-            "details": "Potential user complaints or loss of trust."
-          }
-        ],
-        "evidence_required": [
-          "Cookie policy notice",
-          "Opt-out logs"
-        ]
-      },
-      "country": "IN",
-      "law": "IT Rules (Cookies & Tracking)",
-      "similarity_score": 0.55,
-      "match_score": 0.55,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "EU-GDPR-LawfulProcessing",
-        "text": "Personal data must be processed lawfully, fairly and transparently.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "high",
-            "details": "Fines up to \u20ac20 million or 4% of global turnover."
-          }
-        ],
-        "evidence_required": [
-          "Privacy policies",
-          "Processing activity logs"
-        ]
-      },
-      "country": "EU",
-      "law": "GDPR Article 6",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501c3-PoliticalActivityBan",
-        "text": "NGOs must not participate in political campaigns or lobbying activities.",
-        "penalties": [
-          {
-            "type": "legal",
-            "severity": "medium",
-            "details": "Revocation of tax-exempt status."
-          }
-        ],
-        "evidence_required": [
-          "Public communications",
-          "Event participation records"
-        ]
-      },
-      "country": "US",
-      "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "UK-Charity-AuditReports",
-        "text": "Charities must submit annual audit reports to the Commission.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Suspension of registration or fines."
-          }
-        ],
-        "evidence_required": [
-          "Audit reports",
-          "Financial statements"
-        ]
-      },
-      "country": "UK",
-      "law": "Charity Commission Regulations",
-      "similarity_score": 0.47,
-      "match_score": 0.47,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-11-RegistrationRequirement",
-        "text": "NGOs must obtain FCRA registration or prior permission to accept foreign contributions.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Unauthorized acceptance of foreign contributions can lead to cancellation of registration and legal action."
-          }
-        ],
-        "evidence_required": [
-          "FCRA registration certificate",
-          "Prior permission approval documents"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-16-RenewalRequirement",
-        "text": "Entities must apply for renewal of FCRA registration at least six months before expiry.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to renew on time may result in expiration of registration and inability to receive foreign contributions."
-          }
-        ],
-        "evidence_required": [
-          "Renewal application acknowledgment",
-          "Updated registration certificate"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.54,
-      "match_score": 0.54,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-17-UtilizationRestriction",
-        "text": "Foreign contributions must be utilized strictly for the purposes for which they were received.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Diversion of funds can lead to cancellation of registration and legal proceedings."
-          }
-        ],
-        "evidence_required": [
-          "Utilization certificates",
-          "Project expenditure reports"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-17-DesignatedBankAccount",
-        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Non-compliance may lead to cancellation of registration and legal action."
-          }
-        ],
-        "evidence_required": [
-          "Bank account opening documents",
-          "Bank statements showing foreign contributions"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.54,
-      "match_score": 0.54,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-RegistrationValidityExtension",
-        "text": "Validity of FCRA registration certificates extended as per Public Notice dated 28th March 2025.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Operating with an expired registration may lead to penalties."
-          }
-        ],
-        "evidence_required": [
-          "Copy of the public notice",
-          "Updated registration certificate"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.54,
-      "match_score": 0.54,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-FEMA-AmnestyIndia",
-        "text": "NGOs must not bypass FCRA registration by routing foreign donations via commercial entities.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "high",
-            "details": "ED froze Amnesty's accounts and imposed fines for indirect foreign funding."
-          }
-        ],
-        "evidence_required": [
-          "FCRA registration certificate",
-          "Bank transfer documents",
-          "Foreign remittance declarations",
-          "Company incorporation and transaction trail"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA/FEMA",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-BlockedFunding-Greenpeace",
-        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
-        "penalties": [
-          {
-            "type": "license_block",
-            "severity": "medium",
-            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
-          }
-        ],
-        "evidence_required": [
-          "Government advisory notices",
-          "Activity reports",
-          "FCRA renewal denial orders"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-NonCompliance-NGOBatch",
-        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
-        "penalties": [
-          {
-            "type": "registration_cancelled",
-            "severity": "high",
-            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
-          }
-        ],
-        "evidence_required": [
-          "FC-3 form filings",
-          "Audit statements",
-          "Utilization reports",
-          "Bank transaction summaries"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.52,
-      "match_score": 0.52,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
-    },
-    {
-      "clause": {
-        "id": "US-BSA-HSBC-MoneyLaundering",
-        "text": "Financial institutions must maintain robust AML controls to prevent money laundering under the BSA.",
-        "penalties": [
-          {
-            "type": "financial_fine",
-            "severity": "very_high",
-            "details": "HSBC paid $1.92 billion for AML failures involving drug cartel money."
-          }
-        ],
-        "evidence_required": [
-          "Suspicious Activity Reports (SARs)",
-          "Transaction logs",
-          "Internal AML audit records",
-          "Correspondence with regulators"
-        ]
-      },
-      "country": "US",
-      "law": "Bank Secrecy Act / AML",
-      "similarity_score": 0.53,
-      "match_score": 0.53,
-      "explanation": "Clause not found in internal policy. May lead to compliance risk.",
-      "status": "unmatched"
     }
   ]
 }

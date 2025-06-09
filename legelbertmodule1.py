@@ -4,7 +4,6 @@ import json
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import util
 import torch
-import re
 
 # Load the Multilingual BERT model
 model_name = "bert-base-multilingual-cased"
@@ -17,36 +16,8 @@ def get_embedding(text):
         outputs = model(**inputs)
     return outputs.last_hidden_state.mean(dim=1)
 
-def chunk_text(text, max_tokens=200):
-    """
-    Splits the text into chunks of approximately `max_tokens` tokens.
-    """
-    sentences = re.split(r'(?<=[.!?]) +', text)
-    chunks = []
-    current_chunk = ""
-    current_length = 0
-
-    for sentence in sentences:
-        tokenized_len = len(tokenizer.tokenize(sentence))
-        if current_length + tokenized_len > max_tokens:
-            if current_chunk:
-                chunks.append(current_chunk.strip())
-            current_chunk = sentence
-            current_length = tokenized_len
-        else:
-            current_chunk += " " + sentence
-            current_length += tokenized_len
-
-    if current_chunk:
-        chunks.append(current_chunk.strip())
-
-    return chunks
-
 def analyze_policy_text(policy_text, knowledge_base, threshold_matched=0.75, threshold_partial=0.55):
-    chunks = chunk_text(policy_text)
-
-    # Precompute embeddings for all chunks
-    chunk_embeddings = [get_embedding(chunk) for chunk in chunks]
+    embedding_policy = get_embedding(policy_text)
 
     matched = []
     partial = []
@@ -54,10 +25,9 @@ def analyze_policy_text(policy_text, knowledge_base, threshold_matched=0.75, thr
 
     for entry in knowledge_base:
         clause_text = entry["clause"]["text"]
-        clause_embedding = get_embedding(clause_text)
-
-        # Compute max similarity with any policy chunk
-        max_similarity = max(util.pytorch_cos_sim(clause_embedding, chunk_emb).item() for chunk_emb in chunk_embeddings)
+        embedding_clause = get_embedding(clause_text)
+        similarity = util.pytorch_cos_sim(embedding_policy, embedding_clause)
+        similarity_score = similarity.item()
 
         clause_data = {
             "clause": {
@@ -68,16 +38,16 @@ def analyze_policy_text(policy_text, knowledge_base, threshold_matched=0.75, thr
             },
             "country": entry["country"],
             "law": entry["law"],
-            "similarity_score": round(max_similarity, 2),
-            "match_score": round(max_similarity, 2),
+            "similarity_score": round(similarity_score, 2),
+            "match_score": round(similarity_score, 2),
             "explanation": "",
         }
 
-        if max_similarity >= threshold_matched:
+        if similarity_score >= threshold_matched:
             clause_data["status"] = "matched"
             clause_data["explanation"] = "Clause fully covered in internal policy."
             matched.append(clause_data)
-        elif max_similarity >= threshold_partial:
+        elif similarity_score >= threshold_partial:
             clause_data["status"] = "partial"
             clause_data["explanation"] = "Clause partially covered. Check for missing legal nuances."
             partial.append(clause_data)
