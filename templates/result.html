@@ -1,56 +1,279 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Compliance Summary</title>
+    <title>NGO Compliance Summary</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        body { font-family: sans-serif; margin: 40px; }
-        h2 { color: darkgreen; }
-        .clause { border: 1px solid #ccc; margin: 10px 0; padding: 10px; }
-        .matched, .risk-low { background-color: #d4edda; border-left: 6px solid #28a745; padding: 10px; }
-.partial, .risk-medium { background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 10px; }
-.unmatched, .risk-high { background-color: #f8d7da; border-left: 6px solid #dc3545; padding: 10px; }
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 40px auto;
+            max-width: 1000px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-        .clause strong { display: block; margin-bottom: 5px; }
-        .clause em { font-style: italic; color: #555; }
-        .clause b { color: #d9534f; font-weight: bold; }
-        h1 { color: #333; }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .legend {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .summary-section, .overview {
+            margin-top: 30px;
+        }
+
+        .clause-box {
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
+        }
+
+        .clause-box:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .matched {
+            background-color: #e6ffed;
+            border-left: 6px solid #28a745;
+        }
+
+        .partial {
+            background-color: #fffbe6;
+            border-left: 6px solid #ffc107;
+        }
+
+        .unmatched {
+            background-color: #ffe6e6;
+            border-left: 6px solid #dc3545;
+        }
+
+        .clause-box strong {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .clause-box b {
+            display: inline-block;
+            margin-top: 10px;
+            color: #000;
+        }
+
+        .clause-box em {
+            font-style: italic;
+            color: #555;
+        }
+
+        ul.stats {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        ul.stats li {
+            background: #ffffff;
+            padding: 10px 15px;
+            border-left: 4px solid #2980b9;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border-radius: 5px;
+        }
+
+        .tag {
+            font-weight: bold;
+            font-size: 13px;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+        .risk-low {
+            border-left-color: #28a745;
+        }
+
+        .risk-medium {
+            border-left-color: #ffc107;
+        }
+
+        .risk-high {
+            border-left-color: #dc3545;
+        }
+
+        canvas {
+            max-width: 300px;
+            max-height: 200px;
+        }
+
+        .chart-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-    <h1>🧾 Compliance Summary</h1>
 
-    <h2>Compliance Matching Results</h2>
-<div>
-    <p><strong>Legend:</strong> ✅ Matched (≥ 0.75), ⚠️ Partial (0.55–0.74), ❌ Unmatched (&lt; 0.55)</p>
-</div>
+    <h1>NGO Compliance Summary</h1>
 
-{% for item in matches %}
-  <div class="{{ item.status }}">
-    <strong>{{ item.clause.id }}</strong> — {{ item.status | upper }} (Score: {{ item.match_score }})<br>
-    <b>Clause:</b> {{ item.clause.text }}<br>
-    <b>Explanation:</b> {{ item.explanation }}<br>
-    <b>Evidence Required:</b> {{ item.clause.evidence_required|join(', ') }}
-  </div>
-  <br>
-{% endfor %}
-
-
-    <h2>❌ Unmatched or Missing Requirements</h2>
-{% for m in unmatched %}
-    <div class="clause risk-{{ m.clause.penalties[0].severity }}">
-        <strong>{{ m.clause.id }}</strong><br>
-        {{ m.clause.text }}<br>
-        <b>Missing evidence or coverage.</b><br>
-        <em>Match Score: {{ m.match_score }}</em>
+    <div class="legend">
+        <p><strong>Legend:</strong>  Matched (≥ 0.75),  Partial (0.55–0.74),  Unmatched (&lt; 0.55)</p>
     </div>
-{% endfor %}
-    <h2>📊 Compliance Overview</h2>
-<ul>
-  <li><strong>Total Clauses:</strong> {{ matches | length }}</li>
-  <li><strong>Fully Matched:</strong> {{ matches | selectattr("status", "equalto", "matched") | list | length }}</li>
-  <li><strong>Partially Matched:</strong> {{ matches | selectattr("status", "equalto", "partial") | list | length }}</li>
-  <li><strong>Unmatched:</strong> {{ unmatched | length }}</li>
-</ul>
+
+    <div class="summary-section">
+        <h2>Compliance Matching Results</h2>
+        {% for item in matches %}
+        <div class="clause-box {{ item.status }}">
+            <strong>📌 {{ item.clause.id }}</strong> — <span class="tag">{{ item.status | upper }}</span> (Score: {{ item.match_score }})<br>
+            <b>Clause:</b> {{ item.clause.text }}<br>
+            <b>Explanation:</b> {{ item.explanation }}<br>
+            <b>Evidence Required:</b> {{ item.clause.evidence_required | join(', ') }}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="summary-section">
+        <h2>Unmatched or Missing Requirements</h2>
+        {% for m in unmatched %}
+        <div class="clause-box unmatched risk-{{ m.clause.penalties[0].severity }}">
+            <strong>🚫 {{ m.clause.id }}</strong><br>
+            {{ m.clause.text }}<br>
+            <b>Missing evidence or coverage.</b><br>
+            <em>Match Score: {{ m.match_score }}</em>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h2>📈 Compliance Visualizations</h2>
+    <div class="chart-row">
+        <canvas id="complianceBreakdown"></canvas>
+        <canvas id="compliancePieChart"></canvas>
+        <canvas id="severityChart"></canvas>
+    </div>
+
+    <div class="overview">
+        <h2>Compliance Overview</h2>
+        <ul class="stats">
+            <li><strong>Total Clauses:</strong> {{ matches | length }}</li>
+            <li><strong>Fully Matched:</strong> {{ matches | selectattr("status", "equalto", "matched") | list | length }}</li>
+            <li><strong>Partially Matched:</strong> {{ matches | selectattr("status", "equalto", "partial") | list | length }}</li>
+            <li><strong>Unmatched:</strong> {{ unmatched | length }}</li>
+        </ul>
+    </div>
+
+<script>
+    const matchedCount = {{ matches | selectattr("status", "equalto", "matched") | list | length }};
+    const partialCount = {{ matches | selectattr("status", "equalto", "partial") | list | length }};
+    const unmatchedCount = {{ unmatched | length }};
+
+    const barCtx = document.getElementById('complianceBreakdown').getContext('2d');
+    new Chart(barCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Matched', 'Partial', 'Unmatched'],
+            datasets: [{
+                label: 'Clauses',
+                data: [matchedCount, partialCount, unmatchedCount],
+                backgroundColor: ['#28a745', '#ffc107', '#dc3545']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Compliance Breakdown',
+                    font: { size: 14 }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: 'Count' },
+                    ticks: { stepSize: 1 }
+                }
+            }
+        }
+    });
+
+    const pieCtx = document.getElementById('compliancePieChart').getContext('2d');
+    new Chart(pieCtx, {
+        type: 'pie',
+        data: {
+            labels: ['Matched', 'Partial', 'Unmatched'],
+            datasets: [{
+                data: [matchedCount, partialCount, unmatchedCount],
+                backgroundColor: ['#28a745', '#ffc107', '#dc3545']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Compliance Distribution',
+                    font: { size: 14 }
+                },
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: { size: 12 }
+                    }
+                }
+            }
+        }
+    });
+
+    // Optional: Severity chart if you have data grouped by severity
+    const severityData = {
+        low: {{ unmatched | selectattr("clause.penalties[0].severity", "equalto", "low") | list | length }},
+        medium: {{ unmatched | selectattr("clause.penalties[0].severity", "equalto", "medium") | list | length }},
+        high: {{ unmatched | selectattr("clause.penalties[0].severity", "equalto", "high") | list | length }}
+    };
+
+    const severityCtx = document.getElementById('severityChart').getContext('2d');
+    new Chart(severityCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Low', 'Medium', 'High'],
+            datasets: [{
+                label: 'Severity of Unmatched',
+                data: [severityData.low, severityData.medium, severityData.high],
+                backgroundColor: ['#28a745', '#ffc107', '#dc3545']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Unmatched Severity Levels',
+                    font: { size: 14 }
+                },
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: { size: 12 }
+                    }
+                }
+            }
+        }
+    });
+</script>
 
 </body>
 </html>
+
+
+
+
