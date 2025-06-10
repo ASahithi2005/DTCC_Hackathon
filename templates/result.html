@@ -93,18 +93,6 @@
             border-radius: 4px;
         }
 
-        .risk-low {
-            border-left-color: #28a745;
-        }
-
-        .risk-medium {
-            border-left-color: #ffc107;
-        }
-
-        .risk-high {
-            border-left-color: #dc3545;
-        }
-
         canvas {
             max-width: 300px;
             max-height: 200px;
@@ -141,7 +129,7 @@
     <div class="summary-section">
         <h2>Unmatched or Missing Requirements</h2>
         {% for m in unmatched %}
-        <div class="clause-box unmatched risk-{{ m.clause.penalties[0].severity }}">
+        <div class="clause-box unmatched">
             <strong>🚫 {{ m.clause.id }}</strong><br>
             {{ m.clause.text }}<br>
             <b>Missing evidence or coverage.</b><br>
@@ -152,9 +140,7 @@
 
     <h2>📈 Compliance Visualizations</h2>
     <div class="chart-row">
-        <canvas id="complianceBreakdown"></canvas>
         <canvas id="compliancePieChart"></canvas>
-        <canvas id="severityChart"></canvas>
     </div>
 
     <div class="overview">
@@ -172,37 +158,7 @@
     const partialCount = {{ matches | selectattr("status", "equalto", "partial") | list | length }};
     const unmatchedCount = {{ unmatched | length }};
 
-    const barCtx = document.getElementById('complianceBreakdown').getContext('2d');
-    new Chart(barCtx, {
-        type: 'bar',
-        data: {
-            labels: ['Matched', 'Partial', 'Unmatched'],
-            datasets: [{
-                label: 'Clauses',
-                data: [matchedCount, partialCount, unmatchedCount],
-                backgroundColor: ['#28a745', '#ffc107', '#dc3545']
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: { display: false },
-                title: {
-                    display: true,
-                    text: 'Compliance Breakdown',
-                    font: { size: 14 }
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: { display: true, text: 'Count' },
-                    ticks: { stepSize: 1 }
-                }
-            }
-        }
-    });
+   
 
     const pieCtx = document.getElementById('compliancePieChart').getContext('2d');
     new Chart(pieCtx, {
@@ -232,47 +188,12 @@
             }
         }
     });
-
-    // Optional: Severity chart if you have data grouped by severity
-    const severityData = {
-        low: {{ unmatched | selectattr("clause.penalties[0].severity", "equalto", "low") | list | length }},
-        medium: {{ unmatched | selectattr("clause.penalties[0].severity", "equalto", "medium") | list | length }},
-        high: {{ unmatched | selectattr("clause.penalties[0].severity", "equalto", "high") | list | length }}
-    };
-
-    const severityCtx = document.getElementById('severityChart').getContext('2d');
-    new Chart(severityCtx, {
-        type: 'doughnut',
-        data: {
-            labels: ['Low', 'Medium', 'High'],
-            datasets: [{
-                label: 'Severity of Unmatched',
-                data: [severityData.low, severityData.medium, severityData.high],
-                backgroundColor: ['#28a745', '#ffc107', '#dc3545']
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Unmatched Severity Levels',
-                    font: { size: 14 }
-                },
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        font: { size: 12 }
-                    }
-                }
-            }
-        }
-    });
 </script>
 
 </body>
 </html>
+
+
 
 
 

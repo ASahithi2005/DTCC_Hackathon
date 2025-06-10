@@ -19,8 +19,8 @@
       },
       "country": "IN",
       "law": "IT Act (Section 43A)",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
+      "similarity_score": 0.8,
+      "match_score": 0.8,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -43,55 +43,8 @@
       },
       "country": "IN",
       "law": "UNSCR 1718 Sanctions Compliance",
-      "similarity_score": 0.84,
-      "match_score": 0.84,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-19-ReportingObligations",
-        "text": "Annual returns detailing foreign contributions received and utilized must be filed online with the MHA.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to file returns can lead to penalties and suspension of registration."
-          }
-        ],
-        "evidence_required": [
-          "Filed annual return acknowledgments",
-          "Financial statements"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501c3-Application",
-        "text": "Organizations must apply for recognition of tax-exempt status under Section 501(c)(3) by submitting Form 1023 or Form 1023-EZ electronically via Pay.gov, including the appropriate user fee.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
-          }
-        ],
-        "evidence_required": [
-          "Submission confirmation from Pay.gov",
-          "Copy of filed Form 1023 or 1023-EZ",
-          "IRS determination letter"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 501(c)(3)",
-      "similarity_score": 0.76,
-      "match_score": 0.76,
+      "similarity_score": 0.77,
+      "match_score": 0.77,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -113,126 +66,8 @@
       },
       "country": "US",
       "law": "IRC Section 501(c)(4)",
-      "similarity_score": 0.81,
-      "match_score": 0.81,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501a-Application",
-        "text": "Organizations seeking tax-exempt status under Section 501(a) must file Form 1024 or Form 1024-A electronically via Pay.gov, including the appropriate user fee.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
-          }
-        ],
-        "evidence_required": [
-          "Submission confirmation from Pay.gov",
-          "Copy of filed Form 1024 or 1024-A",
-          "IRS determination letter"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 501(a)",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-508a-TimelyNotification",
-        "text": "Organizations must notify the IRS of their intent to operate as a tax-exempt organization within 27 months of formation to have tax-exempt status retroactive to the date of formation.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Late notification may result in tax-exempt status effective from the date of application rather than the date of formation."
-          }
-        ],
-        "evidence_required": [
-          "Date of incorporation documents",
-          "Submission confirmation from Pay.gov",
-          "IRS determination letter"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 508(a)",
-      "similarity_score": 0.79,
-      "match_score": 0.79,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-6104d-PublicDisclosure",
-        "text": "Tax-exempt organizations must make their approved application for recognition of exemption and the last three annual information returns available for public inspection upon request.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to comply may result in penalties of $20 per day, up to a maximum of $10,000 for each failure."
-          }
-        ],
-        "evidence_required": [
-          "Copies of Form 1023/1024 and supporting documents",
-          "Copies of the last three Form 990 series returns",
-          "Records of public inspection requests and responses"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 6104(d)",
-      "similarity_score": 0.77,
-      "match_score": 0.77,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-17-DesignatedBankAccount",
-        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Non-compliance may lead to cancellation of registration and legal action."
-          }
-        ],
-        "evidence_required": [
-          "Bank account opening documents",
-          "Bank statements showing foreign contributions"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.79,
-      "match_score": 0.79,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-CompoundingOffences",
-        "text": "Compounding of offences under the FCRA, 2010 as per Notification dated 1st July 2022 and subsequent amendments.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "medium",
-            "details": "Offences may be compounded upon payment of specified penalties."
-          }
-        ],
-        "evidence_required": [
-          "Compounding application",
-          "Proof of penalty payment"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.8,
-      "match_score": 0.8,
+      "similarity_score": 0.76,
+      "match_score": 0.76,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -254,8 +89,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
+      "similarity_score": 0.76,
+      "match_score": 0.76,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -277,8 +112,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.77,
-      "match_score": 0.77,
+      "similarity_score": 0.76,
+      "match_score": 0.76,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -300,57 +135,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.8,
-      "match_score": 0.8,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-BlockedFunding-Greenpeace",
-        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
-        "penalties": [
-          {
-            "type": "license_block",
-            "severity": "medium",
-            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
-          }
-        ],
-        "evidence_required": [
-          "Government advisory notices",
-          "Activity reports",
-          "FCRA renewal denial orders"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.75,
-      "match_score": 0.75,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-NonCompliance-NGOBatch",
-        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
-        "penalties": [
-          {
-            "type": "registration_cancelled",
-            "severity": "high",
-            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
-          }
-        ],
-        "evidence_required": [
-          "FC-3 form filings",
-          "Audit statements",
-          "Utilization reports",
-          "Bank transaction summaries"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.77,
-      "match_score": 0.77,
+      "similarity_score": 0.78,
+      "match_score": 0.78,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     }
@@ -374,8 +160,8 @@
       },
       "country": "IN",
       "law": "IT Act (Section 43A)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.69,
+      "match_score": 0.69,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -397,8 +183,8 @@
       },
       "country": "IN",
       "law": "IT Act (Section 72A)",
-      "similarity_score": 0.68,
-      "match_score": 0.68,
+      "similarity_score": 0.63,
+      "match_score": 0.63,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -420,8 +206,8 @@
       },
       "country": "IN",
       "law": "IT Rules (Reasonable Security Practices & Procedures), 2011",
-      "similarity_score": 0.57,
-      "match_score": 0.57,
+      "similarity_score": 0.73,
+      "match_score": 0.73,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -443,8 +229,8 @@
       },
       "country": "IN",
       "law": "IT Rules (Cookies & Tracking)",
-      "similarity_score": 0.63,
-      "match_score": 0.63,
+      "similarity_score": 0.69,
+      "match_score": 0.69,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -466,8 +252,8 @@
       },
       "country": "EU",
       "law": "GDPR Article 6",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -489,8 +275,8 @@
       },
       "country": "EU",
       "law": "GDPR Article 17",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -512,8 +298,8 @@
       },
       "country": "US",
       "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.72,
-      "match_score": 0.72,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -535,8 +321,8 @@
       },
       "country": "US",
       "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.6,
+      "match_score": 0.6,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -558,8 +344,8 @@
       },
       "country": "UK",
       "law": "Charity Commission Regulations",
-      "similarity_score": 0.7,
-      "match_score": 0.7,
+      "similarity_score": 0.58,
+      "match_score": 0.58,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -581,8 +367,8 @@
       },
       "country": "SG",
       "law": "PDPA",
-      "similarity_score": 0.69,
-      "match_score": 0.69,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -604,8 +390,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.66,
-      "match_score": 0.66,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -627,8 +413,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.73,
-      "match_score": 0.73,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -650,8 +436,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.72,
-      "match_score": 0.72,
+      "similarity_score": 0.66,
+      "match_score": 0.66,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -673,8 +459,150 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
+      "similarity_score": 0.7,
+      "match_score": 0.7,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-19-ReportingObligations",
+        "text": "Annual returns detailing foreign contributions received and utilized must be filed online with the MHA.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to file returns can lead to penalties and suspension of registration."
+          }
+        ],
+        "evidence_required": [
+          "Filed annual return acknowledgments",
+          "Financial statements"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.72,
+      "match_score": 0.72,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501c3-Application",
+        "text": "Organizations must apply for recognition of tax-exempt status under Section 501(c)(3) by submitting Form 1023 or Form 1023-EZ electronically via Pay.gov, including the appropriate user fee.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
+          }
+        ],
+        "evidence_required": [
+          "Submission confirmation from Pay.gov",
+          "Copy of filed Form 1023 or 1023-EZ",
+          "IRS determination letter"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 501(c)(3)",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501a-Application",
+        "text": "Organizations seeking tax-exempt status under Section 501(a) must file Form 1024 or Form 1024-A electronically via Pay.gov, including the appropriate user fee.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
+          }
+        ],
+        "evidence_required": [
+          "Submission confirmation from Pay.gov",
+          "Copy of filed Form 1024 or 1024-A",
+          "IRS determination letter"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 501(a)",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-508a-TimelyNotification",
+        "text": "Organizations must notify the IRS of their intent to operate as a tax-exempt organization within 27 months of formation to have tax-exempt status retroactive to the date of formation.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Late notification may result in tax-exempt status effective from the date of application rather than the date of formation."
+          }
+        ],
+        "evidence_required": [
+          "Date of incorporation documents",
+          "Submission confirmation from Pay.gov",
+          "IRS determination letter"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 508(a)",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-6104d-PublicDisclosure",
+        "text": "Tax-exempt organizations must make their approved application for recognition of exemption and the last three annual information returns available for public inspection upon request.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to comply may result in penalties of $20 per day, up to a maximum of $10,000 for each failure."
+          }
+        ],
+        "evidence_required": [
+          "Copies of Form 1023/1024 and supporting documents",
+          "Copies of the last three Form 990 series returns",
+          "Records of public inspection requests and responses"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 6104(d)",
       "similarity_score": 0.73,
       "match_score": 0.73,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-17-DesignatedBankAccount",
+        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Non-compliance may lead to cancellation of registration and legal action."
+          }
+        ],
+        "evidence_required": [
+          "Bank account opening documents",
+          "Bank statements showing foreign contributions"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -696,8 +624,31 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.71,
-      "match_score": 0.71,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-CompoundingOffences",
+        "text": "Compounding of offences under the FCRA, 2010 as per Notification dated 1st July 2022 and subsequent amendments.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "medium",
+            "details": "Offences may be compounded upon payment of specified penalties."
+          }
+        ],
+        "evidence_required": [
+          "Compounding application",
+          "Proof of penalty payment"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -719,8 +670,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.73,
-      "match_score": 0.73,
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -744,8 +695,8 @@
       },
       "country": "US",
       "law": "Anti-Money Laundering (AML) Regulations",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -769,8 +720,57 @@
       },
       "country": "IN",
       "law": "FCRA/FEMA",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.63,
+      "match_score": 0.63,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-BlockedFunding-Greenpeace",
+        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
+        "penalties": [
+          {
+            "type": "license_block",
+            "severity": "medium",
+            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
+          }
+        ],
+        "evidence_required": [
+          "Government advisory notices",
+          "Activity reports",
+          "FCRA renewal denial orders"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.7,
+      "match_score": 0.7,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-NonCompliance-NGOBatch",
+        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
+        "penalties": [
+          {
+            "type": "registration_cancelled",
+            "severity": "high",
+            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
+          }
+        ],
+        "evidence_required": [
+          "FC-3 form filings",
+          "Audit statements",
+          "Utilization reports",
+          "Bank transaction summaries"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -794,8 +794,8 @@
       },
       "country": "US",
       "law": "Bank Secrecy Act / AML",
-      "similarity_score": 0.72,
-      "match_score": 0.72,
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -819,8 +819,8 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.74,
-      "match_score": 0.74,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -844,8 +844,8 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.7,
+      "match_score": 0.7,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     }
@@ -871,8 +871,8 @@
       },
       "country": "IN",
       "law": "IT Act (Section 43A)",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
+      "similarity_score": 0.8,
+      "match_score": 0.8,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -895,55 +895,8 @@
       },
       "country": "IN",
       "law": "UNSCR 1718 Sanctions Compliance",
-      "similarity_score": 0.84,
-      "match_score": 0.84,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-19-ReportingObligations",
-        "text": "Annual returns detailing foreign contributions received and utilized must be filed online with the MHA.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to file returns can lead to penalties and suspension of registration."
-          }
-        ],
-        "evidence_required": [
-          "Filed annual return acknowledgments",
-          "Financial statements"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501c3-Application",
-        "text": "Organizations must apply for recognition of tax-exempt status under Section 501(c)(3) by submitting Form 1023 or Form 1023-EZ electronically via Pay.gov, including the appropriate user fee.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
-          }
-        ],
-        "evidence_required": [
-          "Submission confirmation from Pay.gov",
-          "Copy of filed Form 1023 or 1023-EZ",
-          "IRS determination letter"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 501(c)(3)",
-      "similarity_score": 0.76,
-      "match_score": 0.76,
+      "similarity_score": 0.77,
+      "match_score": 0.77,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -965,126 +918,8 @@
       },
       "country": "US",
       "law": "IRC Section 501(c)(4)",
-      "similarity_score": 0.81,
-      "match_score": 0.81,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-501a-Application",
-        "text": "Organizations seeking tax-exempt status under Section 501(a) must file Form 1024 or Form 1024-A electronically via Pay.gov, including the appropriate user fee.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
-          }
-        ],
-        "evidence_required": [
-          "Submission confirmation from Pay.gov",
-          "Copy of filed Form 1024 or 1024-A",
-          "IRS determination letter"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 501(a)",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-508a-TimelyNotification",
-        "text": "Organizations must notify the IRS of their intent to operate as a tax-exempt organization within 27 months of formation to have tax-exempt status retroactive to the date of formation.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Late notification may result in tax-exempt status effective from the date of application rather than the date of formation."
-          }
-        ],
-        "evidence_required": [
-          "Date of incorporation documents",
-          "Submission confirmation from Pay.gov",
-          "IRS determination letter"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 508(a)",
-      "similarity_score": 0.79,
-      "match_score": 0.79,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "US-IRS-6104d-PublicDisclosure",
-        "text": "Tax-exempt organizations must make their approved application for recognition of exemption and the last three annual information returns available for public inspection upon request.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "medium",
-            "details": "Failure to comply may result in penalties of $20 per day, up to a maximum of $10,000 for each failure."
-          }
-        ],
-        "evidence_required": [
-          "Copies of Form 1023/1024 and supporting documents",
-          "Copies of the last three Form 990 series returns",
-          "Records of public inspection requests and responses"
-        ]
-      },
-      "country": "US",
-      "law": "IRC Section 6104(d)",
-      "similarity_score": 0.77,
-      "match_score": 0.77,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-17-DesignatedBankAccount",
-        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
-        "penalties": [
-          {
-            "type": "regulatory",
-            "severity": "high",
-            "details": "Non-compliance may lead to cancellation of registration and legal action."
-          }
-        ],
-        "evidence_required": [
-          "Bank account opening documents",
-          "Bank statements showing foreign contributions"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.79,
-      "match_score": 0.79,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-CompoundingOffences",
-        "text": "Compounding of offences under the FCRA, 2010 as per Notification dated 1st July 2022 and subsequent amendments.",
-        "penalties": [
-          {
-            "type": "financial",
-            "severity": "medium",
-            "details": "Offences may be compounded upon payment of specified penalties."
-          }
-        ],
-        "evidence_required": [
-          "Compounding application",
-          "Proof of penalty payment"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA 2010",
-      "similarity_score": 0.8,
-      "match_score": 0.8,
+      "similarity_score": 0.76,
+      "match_score": 0.76,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -1106,8 +941,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.78,
-      "match_score": 0.78,
+      "similarity_score": 0.76,
+      "match_score": 0.76,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -1129,8 +964,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.77,
-      "match_score": 0.77,
+      "similarity_score": 0.76,
+      "match_score": 0.76,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -1152,57 +987,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.8,
-      "match_score": 0.8,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-BlockedFunding-Greenpeace",
-        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
-        "penalties": [
-          {
-            "type": "license_block",
-            "severity": "medium",
-            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
-          }
-        ],
-        "evidence_required": [
-          "Government advisory notices",
-          "Activity reports",
-          "FCRA renewal denial orders"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.75,
-      "match_score": 0.75,
-      "explanation": "Clause fully covered in internal policy.",
-      "status": "matched"
-    },
-    {
-      "clause": {
-        "id": "IN-FCRA-NonCompliance-NGOBatch",
-        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
-        "penalties": [
-          {
-            "type": "registration_cancelled",
-            "severity": "high",
-            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
-          }
-        ],
-        "evidence_required": [
-          "FC-3 form filings",
-          "Audit statements",
-          "Utilization reports",
-          "Bank transaction summaries"
-        ]
-      },
-      "country": "IN",
-      "law": "FCRA",
-      "similarity_score": 0.77,
-      "match_score": 0.77,
+      "similarity_score": 0.78,
+      "match_score": 0.78,
       "explanation": "Clause fully covered in internal policy.",
       "status": "matched"
     },
@@ -1224,8 +1010,8 @@
       },
       "country": "IN",
       "law": "IT Act (Section 43A)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.69,
+      "match_score": 0.69,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1247,8 +1033,8 @@
       },
       "country": "IN",
       "law": "IT Act (Section 72A)",
-      "similarity_score": 0.68,
-      "match_score": 0.68,
+      "similarity_score": 0.63,
+      "match_score": 0.63,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1270,8 +1056,8 @@
       },
       "country": "IN",
       "law": "IT Rules (Reasonable Security Practices & Procedures), 2011",
-      "similarity_score": 0.57,
-      "match_score": 0.57,
+      "similarity_score": 0.73,
+      "match_score": 0.73,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1293,8 +1079,8 @@
       },
       "country": "IN",
       "law": "IT Rules (Cookies & Tracking)",
-      "similarity_score": 0.63,
-      "match_score": 0.63,
+      "similarity_score": 0.69,
+      "match_score": 0.69,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1316,8 +1102,8 @@
       },
       "country": "EU",
       "law": "GDPR Article 6",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1339,8 +1125,8 @@
       },
       "country": "EU",
       "law": "GDPR Article 17",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1362,8 +1148,8 @@
       },
       "country": "US",
       "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.72,
-      "match_score": 0.72,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1385,8 +1171,8 @@
       },
       "country": "US",
       "law": "IRS Code 501(c)(3)",
-      "similarity_score": 0.65,
-      "match_score": 0.65,
+      "similarity_score": 0.6,
+      "match_score": 0.6,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1408,8 +1194,8 @@
       },
       "country": "UK",
       "law": "Charity Commission Regulations",
-      "similarity_score": 0.7,
-      "match_score": 0.7,
+      "similarity_score": 0.58,
+      "match_score": 0.58,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1431,8 +1217,8 @@
       },
       "country": "SG",
       "law": "PDPA",
-      "similarity_score": 0.69,
-      "match_score": 0.69,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1454,8 +1240,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.66,
-      "match_score": 0.66,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1477,8 +1263,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.73,
-      "match_score": 0.73,
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1500,8 +1286,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.72,
-      "match_score": 0.72,
+      "similarity_score": 0.66,
+      "match_score": 0.66,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1523,8 +1309,150 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
+      "similarity_score": 0.7,
+      "match_score": 0.7,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-19-ReportingObligations",
+        "text": "Annual returns detailing foreign contributions received and utilized must be filed online with the MHA.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to file returns can lead to penalties and suspension of registration."
+          }
+        ],
+        "evidence_required": [
+          "Filed annual return acknowledgments",
+          "Financial statements"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.72,
+      "match_score": 0.72,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501c3-Application",
+        "text": "Organizations must apply for recognition of tax-exempt status under Section 501(c)(3) by submitting Form 1023 or Form 1023-EZ electronically via Pay.gov, including the appropriate user fee.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
+          }
+        ],
+        "evidence_required": [
+          "Submission confirmation from Pay.gov",
+          "Copy of filed Form 1023 or 1023-EZ",
+          "IRS determination letter"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 501(c)(3)",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-501a-Application",
+        "text": "Organizations seeking tax-exempt status under Section 501(a) must file Form 1024 or Form 1024-A electronically via Pay.gov, including the appropriate user fee.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
+          }
+        ],
+        "evidence_required": [
+          "Submission confirmation from Pay.gov",
+          "Copy of filed Form 1024 or 1024-A",
+          "IRS determination letter"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 501(a)",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-508a-TimelyNotification",
+        "text": "Organizations must notify the IRS of their intent to operate as a tax-exempt organization within 27 months of formation to have tax-exempt status retroactive to the date of formation.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Late notification may result in tax-exempt status effective from the date of application rather than the date of formation."
+          }
+        ],
+        "evidence_required": [
+          "Date of incorporation documents",
+          "Submission confirmation from Pay.gov",
+          "IRS determination letter"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 508(a)",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "US-IRS-6104d-PublicDisclosure",
+        "text": "Tax-exempt organizations must make their approved application for recognition of exemption and the last three annual information returns available for public inspection upon request.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "medium",
+            "details": "Failure to comply may result in penalties of $20 per day, up to a maximum of $10,000 for each failure."
+          }
+        ],
+        "evidence_required": [
+          "Copies of Form 1023/1024 and supporting documents",
+          "Copies of the last three Form 990 series returns",
+          "Records of public inspection requests and responses"
+        ]
+      },
+      "country": "US",
+      "law": "IRC Section 6104(d)",
       "similarity_score": 0.73,
       "match_score": 0.73,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-17-DesignatedBankAccount",
+        "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
+        "penalties": [
+          {
+            "type": "regulatory",
+            "severity": "high",
+            "details": "Non-compliance may lead to cancellation of registration and legal action."
+          }
+        ],
+        "evidence_required": [
+          "Bank account opening documents",
+          "Bank statements showing foreign contributions"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1546,8 +1474,31 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.71,
-      "match_score": 0.71,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-CompoundingOffences",
+        "text": "Compounding of offences under the FCRA, 2010 as per Notification dated 1st July 2022 and subsequent amendments.",
+        "penalties": [
+          {
+            "type": "financial",
+            "severity": "medium",
+            "details": "Offences may be compounded upon payment of specified penalties."
+          }
+        ],
+        "evidence_required": [
+          "Compounding application",
+          "Proof of penalty payment"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA 2010",
+      "similarity_score": 0.74,
+      "match_score": 0.74,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1569,8 +1520,8 @@
       },
       "country": "IN",
       "law": "FCRA 2010",
-      "similarity_score": 0.73,
-      "match_score": 0.73,
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1594,8 +1545,8 @@
       },
       "country": "US",
       "law": "Anti-Money Laundering (AML) Regulations",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.65,
+      "match_score": 0.65,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1619,8 +1570,57 @@
       },
       "country": "IN",
       "law": "FCRA/FEMA",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.63,
+      "match_score": 0.63,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-BlockedFunding-Greenpeace",
+        "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
+        "penalties": [
+          {
+            "type": "license_block",
+            "severity": "medium",
+            "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
+          }
+        ],
+        "evidence_required": [
+          "Government advisory notices",
+          "Activity reports",
+          "FCRA renewal denial orders"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.7,
+      "match_score": 0.7,
+      "explanation": "Clause partially covered. Check for missing legal nuances.",
+      "status": "partial"
+    },
+    {
+      "clause": {
+        "id": "IN-FCRA-NonCompliance-NGOBatch",
+        "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
+        "penalties": [
+          {
+            "type": "registration_cancelled",
+            "severity": "high",
+            "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
+          }
+        ],
+        "evidence_required": [
+          "FC-3 form filings",
+          "Audit statements",
+          "Utilization reports",
+          "Bank transaction summaries"
+        ]
+      },
+      "country": "IN",
+      "law": "FCRA",
+      "similarity_score": 0.67,
+      "match_score": 0.67,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1644,8 +1644,8 @@
       },
       "country": "US",
       "law": "Bank Secrecy Act / AML",
-      "similarity_score": 0.72,
-      "match_score": 0.72,
+      "similarity_score": 0.68,
+      "match_score": 0.68,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1669,8 +1669,8 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.74,
-      "match_score": 0.74,
+      "similarity_score": 0.71,
+      "match_score": 0.71,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     },
@@ -1694,8 +1694,8 @@
       },
       "country": "IN",
       "law": "FCRA",
-      "similarity_score": 0.64,
-      "match_score": 0.64,
+      "similarity_score": 0.7,
+      "match_score": 0.7,
       "explanation": "Clause partially covered. Check for missing legal nuances.",
       "status": "partial"
     }
