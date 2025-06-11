@@ -7,8 +7,8 @@
         h2 { color: darkgreen; }
         .clause { border: 1px solid #ccc; margin: 10px 0; padding: 10px; }
         .matched, .risk-low { background-color: #d4edda; border-left: 6px solid #28a745; padding: 10px; }
-.partial, .risk-medium { background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 10px; }
-.unmatched, .risk-high { background-color: #f8d7da; border-left: 6px solid #dc3545; padding: 10px; }
+        .partial, .risk-medium { background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 10px; }
+        .unmatched, .risk-high { background-color: #f8d7da; border-left: 6px solid #dc3545; padding: 10px; }
 
         .clause strong { display: block; margin-bottom: 5px; }
         .clause em { font-style: italic; color: #555; }
@@ -19,9 +19,17 @@
 <body>
     <h1>🧾 Compliance Summary</h1>
 
+    <h2>🗂️ Policy Filter</h2>
+    <ul>
+        <p>Country: {{ filters.country }}</p>
+<p>Region: {{ filters.region }}</p>
+<p>NGO Type: {{ filters.ngo_type }}</p>
+
+    </ul>
+
     <h2>Compliance Matching Results</h2>
 <div>
-    <p><strong>Legend:</strong> ✅ Matched (≥ 0.75), ⚠️ Partial (0.55–0.74), ❌ Unmatched (&lt; 0.55)</p>
+    <p><strong>Legend:</strong> ✅ Matched (≥ 0.75), ⚠️ Partial (0.55–0.74), ❌ Unmatched (< 0.55)</p>
 </div>
 
 {% for item in matches %}
@@ -29,11 +37,13 @@
     <strong>{{ item.clause.id }}</strong> — {{ item.status | upper }} (Score: {{ item.match_score }})<br>
     <b>Clause:</b> {{ item.clause.text }}<br>
     <b>Explanation:</b> {{ item.explanation }}<br>
-    <b>Evidence Required:</b> {{ item.clause.evidence_required|join(', ') }}
+    <b>Evidence Required:</b> {{ item.clause.evidence_required|join(', ') }}<br>
+    <b>Law:</b> {{ item.law }}<br>
+    <b>Region:</b> {{ item.region if item.region else 'All' }}<br>
+    <b>NGO Type:</b> {{ item.ngo_type if item.ngo_type else 'All' }}
   </div>
   <br>
 {% endfor %}
-
 
     <h2>❌ Unmatched or Missing Requirements</h2>
 {% for m in unmatched %}
@@ -44,6 +54,7 @@
         <em>Match Score: {{ m.match_score }}</em>
     </div>
 {% endfor %}
+
     <h2>📊 Compliance Overview</h2>
 <ul>
   <li><strong>Total Clauses:</strong> {{ matches | length }}</li>

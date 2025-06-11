@@ -18,6 +18,9 @@ def get_embedding(text):
     return outputs.last_hidden_state.mean(dim=1)
 
 def chunk_text(text, max_tokens=200):
+    """
+    Splits the text into chunks of approximately `max_tokens` tokens.
+    """
     sentences = re.split(r'(?<=[.!?]) +', text)
     chunks = []
     current_chunk = ""
@@ -39,44 +42,29 @@ def chunk_text(text, max_tokens=200):
     
     return chunks
 
-def analyze_policy_text(policy_text, knowledge_base, threshold_matched=0.75, threshold_partial=0.55, ngo_type=None, region=None, country=None):
+def analyze_policy_text(policy_text, knowledge_base, threshold_matched=0.75, threshold_partial=0.55):
     chunks = chunk_text(policy_text)
-    chunk_embeddings = [get_embedding(chunk) for chunk in chunks]
 
+    # Precompute embeddings for all chunks
+    chunk_embeddings = [get_embedding(chunk) for chunk in chunks]
+    
     matched = []
     partial = []
     unmatched = []
-
+    
     for entry in knowledge_base:
-        clause = entry["clause"]
-
-        # Filter by country
-        if country and entry.get("country", "").lower() != country.lower():
-            continue
-
-        # Filter by NGO type
-        applicable_types = clause.get("applicable_ngo_types", ["All"])
-        if ngo_type and ngo_type not in applicable_types and "All" not in applicable_types:
-            continue
-
-        # Filter by region
-        applicable_regions = clause.get("applicable_regions", ["All"])
-        if region and region not in applicable_regions and "All" not in applicable_regions:
-            continue
-
-        clause_text = clause["text"]
+        clause_text = entry["clause"]["text"]
         clause_embedding = get_embedding(clause_text)
 
+        # Compute max similarity with any policy chunk
         max_similarity = max(util.pytorch_cos_sim(clause_embedding, chunk_emb).item() for chunk_emb in chunk_embeddings)
 
         clause_data = {
             "clause": {
-                "id": clause["id"],
+                "id": entry["clause"]["id"],
                 "text": clause_text,
-                "penalties": clause.get("penalties", []),
-                "evidence_required": clause.get("evidence_required", []),
-                "applicable_ngo_types": applicable_types,
-                "applicable_regions": applicable_regions
+                "penalties": entry["clause"].get("penalties", []),
+                "evidence_required": entry["clause"].get("evidence_required", [])
             },
             "country": entry["country"],
             "law": entry["law"],
@@ -84,7 +72,7 @@ def analyze_policy_text(policy_text, knowledge_base, threshold_matched=0.75, thr
             "match_score": round(max_similarity, 2),
             "explanation": "",
         }
-
+    
         if max_similarity >= threshold_matched:
             clause_data["status"] = "matched"
             clause_data["explanation"] = "Clause fully covered in internal policy."

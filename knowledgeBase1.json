@@ -1,0 +1,744 @@
+[
+  {
+    "country": "IN",
+    "law": "IT Act (Section 43A)",
+    "clause": {
+      "id": "IN-IT-43A-SecurityPractices",
+      "text": "Implement reasonable security practices and procedures aligned with the sensitivity of data handled.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Compensation for negligence resulting in data breach."
+        }
+      ],
+      "evidence_required": [
+        "Security policy documents",
+        "Access control logs",
+        "Encryption protocols"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Act (Section 43A)",
+    "clause": {
+      "id": "IN-IT-43A-ConsentCollection",
+      "text": "User consent must be obtained before collecting or using personal or sensitive data.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "legal",
+          "severity": "medium",
+          "details": "Violation can result in compensation claims from users."
+        }
+      ],
+      "evidence_required": [
+        "Consent forms",
+        "Privacy Policy acknowledgment logs"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Act (Section 72A)",
+    "clause": {
+      "id": "IN-IT-72A-DisclosureRestrictions",
+      "text": "Disclosure of personal information without consent is prohibited except under legal obligation.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "criminal",
+          "severity": "high",
+          "details": "Imprisonment up to 3 years or fine up to \u20b95,00,000, or both."
+        }
+      ],
+      "evidence_required": [
+        "Disclosure logs",
+        "Legal notice records"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Rules (Reasonable Security Practices & Procedures), 2011",
+    "clause": {
+      "id": "IN-ITR-2011-ErasureRight",
+      "text": "Users have the right to request deletion of their personal information from the platform.",
+      "category": "user_right",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "low",
+          "details": "Non-compliance may lead to user complaints to data protection authorities."
+        }
+      ],
+      "evidence_required": [
+        "Erasure request logs",
+        "Audit trails of deletion actions"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "IT Rules (Cookies & Tracking)",
+    "clause": {
+      "id": "IN-ITR-2011-CookiesNotice",
+      "text": "Users must be notified of cookies usage and allowed to opt-out.",
+      "category": "advisory",
+      "penalties": [
+        {
+          "type": "reputational",
+          "severity": "low",
+          "details": "Potential user complaints or loss of trust."
+        }
+      ],
+      "evidence_required": [
+        "Cookie policy notice",
+        "Opt-out logs"
+      ]
+    }
+  },
+  {
+    "country": "EU",
+    "law": "GDPR Article 6",
+    "clause": {
+      "id": "EU-GDPR-LawfulProcessing",
+      "text": "Personal data must be processed lawfully, fairly and transparently.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Fines up to \u20ac20 million or 4% of global turnover."
+        }
+      ],
+      "evidence_required": [
+        "Privacy policies",
+        "Processing activity logs"
+      ]
+    }
+  },
+  {
+    "country": "EU",
+    "law": "GDPR Article 17",
+    "clause": {
+      "id": "EU-GDPR-ErasureRequest",
+      "text": "Data subjects have the right to request erasure of their personal data.",
+      "category": "user_right",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Complaints to EU data protection authorities."
+        }
+      ],
+      "evidence_required": [
+        "Deletion logs",
+        "User request records"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRS Code 501(c)(3)",
+    "clause": {
+      "id": "US-IRS-501c3-PublicBenefit",
+      "text": "NGO must operate exclusively for religious, charitable, scientific, or educational purposes.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Loss of tax-exempt status and penalties."
+        }
+      ],
+      "evidence_required": [
+        "Mission statement",
+        "Activity reports"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRS Code 501(c)(3)",
+    "clause": {
+      "id": "US-IRS-501c3-PoliticalActivityBan",
+      "text": "NGOs must not participate in political campaigns or lobbying activities.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "legal",
+          "severity": "medium",
+          "details": "Revocation of tax-exempt status."
+        }
+      ],
+      "evidence_required": [
+        "Public communications",
+        "Event participation records"
+      ]
+    }
+  },
+  {
+    "country": "UK",
+    "law": "Charity Commission Regulations",
+    "clause": {
+      "id": "UK-Charity-AuditReports",
+      "text": "Charities must submit annual audit reports to the Commission.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Suspension of registration or fines."
+        }
+      ],
+      "evidence_required": [
+        "Audit reports",
+        "Financial statements"
+      ]
+    }
+  },
+  {
+    "country": "SG",
+    "law": "PDPA",
+    "clause": {
+      "id": "SG-PDPA-ConsentAndNotification",
+      "text": "Organizations must notify individuals and obtain consent before collecting personal data.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "high",
+          "details": "Fines up to SGD 1 million."
+        }
+      ],
+      "evidence_required": [
+        "Consent logs",
+        "Privacy notices"
+      ]
+    }
+  },
+  {
+  "country": "IN",
+  "law": "UNSCR 1718 Sanctions Compliance",
+  "clause": {
+    "id": "IN-RBI-UNSCR1718-DPRK",
+    "text": "Regulated Entities must verify the UNSCR 1718 Sanctions List on the MEA website daily and take note of any changes, including additions or deletions of designated individuals and entities.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "regulatory",
+        "severity": "high",
+        "details": "Non-compliance may lead to enforcement action under FEMA and AML regulations."
+      }
+    ],
+    "evidence_required": [
+      "Daily sanctions screening logs",
+      "Compliance officer verification reports",
+      "Archived copies of reviewed sanction list"
+    ]
+  }
+},
+
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-11-RegistrationRequirement",
+      "text": "NGOs must obtain FCRA registration or prior permission to accept foreign contributions.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "high",
+          "details": "Unauthorized acceptance of foreign contributions can lead to cancellation of registration and legal action."
+        }
+      ],
+      "evidence_required": [
+        "FCRA registration certificate",
+        "Prior permission approval documents"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-16-RenewalRequirement",
+      "text": "Entities must apply for renewal of FCRA registration at least six months before expiry.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Failure to renew on time may result in expiration of registration and inability to receive foreign contributions."
+        }
+      ],
+      "evidence_required": [
+        "Renewal application acknowledgment",
+        "Updated registration certificate"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-17-UtilizationRestriction",
+      "text": "Foreign contributions must be utilized strictly for the purposes for which they were received.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "high",
+          "details": "Diversion of funds can lead to cancellation of registration and legal proceedings."
+        }
+      ],
+      "evidence_required": [
+        "Utilization certificates",
+        "Project expenditure reports"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-18-AccountMaintenance",
+      "text": "NGOs must maintain a separate bank account exclusively for the receipt and utilization of foreign contributions.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Non-compliance may result in penalties and scrutiny of financial transactions."
+        }
+      ],
+      "evidence_required": [
+        "Bank account statements",
+        "Bank account opening documents"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-19-ReportingObligations",
+      "text": "Annual returns detailing foreign contributions received and utilized must be filed online with the MHA.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Failure to file returns can lead to penalties and suspension of registration."
+        }
+      ],
+      "evidence_required": [
+        "Filed annual return acknowledgments",
+        "Financial statements"
+      ]
+    }
+  },
+
+  {
+    "country": "US",
+    "law": "IRC Section 501(c)(3)",
+    "clause": {
+      "id": "US-IRS-501c3-Application",
+      "text": "Organizations must apply for recognition of tax-exempt status under Section 501(c)(3) by submitting Form 1023 or Form 1023-EZ electronically via Pay.gov, including the appropriate user fee.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "high",
+          "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
+        }
+      ],
+      "evidence_required": [
+        "Submission confirmation from Pay.gov",
+        "Copy of filed Form 1023 or 1023-EZ",
+        "IRS determination letter"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRC Section 501(c)(4)",
+    "clause": {
+      "id": "US-IRS-501c4-Notification",
+      "text": "Social welfare organizations must submit Form 8976, Notice of Intent to Operate Under Section 501(c)(4), electronically via Pay.gov within 60 days of formation.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "medium",
+          "details": "Late notification may result in penalties up to $20 per day, not to exceed $5,000."
+        }
+      ],
+      "evidence_required": [
+        "Submission confirmation from Pay.gov",
+        "Copy of filed Form 8976"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRC Section 501(a)",
+    "clause": {
+      "id": "US-IRS-501a-Application",
+      "text": "Organizations seeking tax-exempt status under Section 501(a) must file Form 1024 or Form 1024-A electronically via Pay.gov, including the appropriate user fee.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "high",
+          "details": "Failure to obtain recognition may result in ineligibility for tax-exempt benefits and potential tax liabilities."
+        }
+      ],
+      "evidence_required": [
+        "Submission confirmation from Pay.gov",
+        "Copy of filed Form 1024 or 1024-A",
+        "IRS determination letter"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRC Section 508(a)",
+    "clause": {
+      "id": "US-IRS-508a-TimelyNotification",
+      "text": "Organizations must notify the IRS of their intent to operate as a tax-exempt organization within 27 months of formation to have tax-exempt status retroactive to the date of formation.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Late notification may result in tax-exempt status effective from the date of application rather than the date of formation."
+        }
+      ],
+      "evidence_required": [
+        "Date of incorporation documents",
+        "Submission confirmation from Pay.gov",
+        "IRS determination letter"
+      ]
+    }
+  },
+  {
+    "country": "US",
+    "law": "IRC Section 6104(d)",
+    "clause": {
+      "id": "US-IRS-6104d-PublicDisclosure",
+      "text": "Tax-exempt organizations must make their approved application for recognition of exemption and the last three annual information returns available for public inspection upon request.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Failure to comply may result in penalties of $20 per day, up to a maximum of $10,000 for each failure."
+        }
+      ],
+      "evidence_required": [
+        "Copies of Form 1023/1024 and supporting documents",
+        "Copies of the last three Form 990 series returns",
+        "Records of public inspection requests and responses"
+      ]
+    }
+  },
+  
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-17-DesignatedBankAccount",
+      "text": "Associations must open and operate the designated 'FCRA Account' as provided under the amended Section 17(1) of the Foreign Contribution (Regulation) Act, 2010.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "high",
+          "details": "Non-compliance may lead to cancellation of registration and legal action."
+        }
+      ],
+      "evidence_required": [
+        "Bank account opening documents",
+        "Bank statements showing foreign contributions"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-RegistrationValidityExtension",
+      "text": "Validity of FCRA registration certificates extended as per Public Notice dated 28th March 2025.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Operating with an expired registration may lead to penalties."
+        }
+      ],
+      "evidence_required": [
+        "Copy of the public notice",
+        "Updated registration certificate"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-CompoundingOffences",
+      "text": "Compounding of offences under the FCRA, 2010 as per Notification dated 1st July 2022 and subsequent amendments.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "financial",
+          "severity": "medium",
+          "details": "Offences may be compounded upon payment of specified penalties."
+        }
+      ],
+      "evidence_required": [
+        "Compounding application",
+        "Proof of penalty payment"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-ChangeInKeyMembers",
+      "text": "Intimation to the Central Government regarding change in key members of the association under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Failure to intimate changes may lead to penalties."
+        }
+      ],
+      "evidence_required": [
+        "FC-6E form submission",
+        "Supporting documents for changes"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-AdditionalBankAccount",
+      "text": "Intimation to the Central Government regarding opening of additional FC-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Non-intimation may lead to scrutiny and penalties."
+        }
+      ],
+      "evidence_required": [
+        "FC-6D form submission",
+        "Bank account opening documents"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-ChangeInBankDetails",
+      "text": "Intimation to the Central Government regarding change of designated bank/branch/bank account number of designated FC receipt-cum-utilisation bank account under rule 9 and rule 17A of the Foreign Contribution (Regulation) Rules, 2011.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Failure to intimate changes may lead to penalties."
+        }
+      ],
+      "evidence_required": [
+        "FC-6C form submission",
+        "Supporting bank documents"
+      ]
+    }
+  },
+  {
+    "country": "IN",
+    "law": "FCRA 2010",
+    "clause": {
+      "id": "IN-FCRA-ReceiptOfForeignContribution",
+      "text": "Intimation of receipt of foreign contribution by way of gift/as articles/securities/by candidate for election using FC-1 form.",
+      "category": "mandatory",
+      "penalties": [
+        {
+          "type": "regulatory",
+          "severity": "medium",
+          "details": "Non-intimation may lead to penalties."
+        }
+      ],
+      "evidence_required": [
+        "FC-1 form submission",
+        "Supporting documents for received contributions"
+      ]
+    }
+  },
+  {
+  "country": "US",
+  "law": "Anti-Money Laundering (AML) Regulations",
+  "clause": {
+    "id": "US-AML-HSBC-MoneyLaunderingScandal",
+    "text": "HSBC failed to maintain effective anti-money laundering controls and facilitated money laundering for drug cartels, resulting in a $1.9 billion settlement.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "financial_fine",
+        "severity": "high",
+        "details": "HSBC agreed to pay a $1.92 billion settlement to U.S. authorities."
+      }
+    ],
+    "evidence_required": [
+      "Internal bank audit reports",
+      "Transaction records showing money laundering activities",
+      "Compliance program documentation",
+      "Settlement agreement documents"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA/FEMA",
+  "clause": {
+    "id": "IN-FCRA-FEMA-AmnestyIndia",
+    "text": "NGOs must not bypass FCRA registration by routing foreign donations via commercial entities.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "financial",
+        "severity": "high",
+        "details": "ED froze Amnesty's accounts and imposed fines for indirect foreign funding."
+      }
+    ],
+    "evidence_required": [
+      "FCRA registration certificate",
+      "Bank transfer documents",
+      "Foreign remittance declarations",
+      "Company incorporation and transaction trail"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-BlockedFunding-Greenpeace",
+    "text": "NGOs must not use foreign funds in a manner considered harmful to national interests under Section 12(4)(f) of the FCRA.",
+    "category": "prohibited",
+    "penalties": [
+      {
+        "type": "license_block",
+        "severity": "medium",
+        "details": "Government blocked foreign funds for Greenpeace India, citing anti-development agenda."
+      }
+    ],
+    "evidence_required": [
+      "Government advisory notices",
+      "Activity reports",
+      "FCRA renewal denial orders"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-NonCompliance-NGOBatch",
+    "text": "Filing of annual returns and proper utilization of foreign funds is mandatory under FCRA Rules.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "registration_cancelled",
+        "severity": "high",
+        "details": "FCRA licenses of six NGOs cancelled due to violations like late filing or misuse of funds."
+      }
+    ],
+    "evidence_required": [
+      "FC-3 form filings",
+      "Audit statements",
+      "Utilization reports",
+      "Bank transaction summaries"
+    ]
+  }
+},
+{
+  "country": "US",
+  "law": "Bank Secrecy Act / AML",
+  "clause": {
+    "id": "US-BSA-HSBC-MoneyLaundering",
+    "text": "Financial institutions must maintain robust AML controls to prevent money laundering under the BSA.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "financial_fine",
+        "severity": "very_high",
+        "details": "HSBC paid $1.92 billion for AML failures involving drug cartel money."
+      }
+    ],
+    "evidence_required": [
+      "Suspicious Activity Reports (SARs)",
+      "Transaction logs",
+      "Internal AML audit records",
+      "Correspondence with regulators"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-Cancellation-DristiIAS",
+    "text": "FCRA registration can be cancelled for NGOs violating the Act, engaging in anti-national activities, or misutilizing foreign funds.",
+    "category": "mandatory",
+    "penalties": [
+      {
+        "type": "registration_cancelled",
+        "severity": "high",
+        "details": "More than 6,600 NGOs have had FCRA licenses cancelled for non-compliance or misuse of funds."
+      }
+    ],
+    "evidence_required": [
+      "Annual returns",
+      "Foreign contribution utilization records",
+      "Activity reports",
+      "MHA cancellation orders"
+    ]
+  }
+},
+{
+  "country": "IN",
+  "law": "FCRA",
+  "clause": {
+    "id": "IN-FCRA-Benami-Anantapur",
+    "text": "NGOs must not use benami operations or unauthorized proxy accounts to receive or utilize foreign funds.",
+    "category": "prohibited",
+    "penalties": [
+      {
+        "type": "criminal_investigation",
+        "severity": "high",
+        "details": "Complaint filed with MHA and ED against four NGOs in Anantapur for operating proxy accounts and misusing FCRA."
+      }
+    ],
+    "evidence_required": [
+      "Bank account ownership documents",
+      "Audit reports",
+      "MHA/ED notices",
+      "Foreign donor transaction logs"
+    ]
+  }
+}
+]
